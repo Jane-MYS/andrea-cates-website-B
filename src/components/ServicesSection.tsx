@@ -23,7 +23,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           <div className="card-gradient rounded-2xl shadow-lg p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl mb-6 text-beach-blue bg-beach-blue/20">
               <Star className="h-10 w-10" />
@@ -91,19 +91,20 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <div className="card-gradient rounded-2xl shadow-lg p-8 transition-all duration-300 mx-auto max-w-2xl">
-          <div className="flex flex-col md:flex-row items-center mb-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl mb-4 md:mb-0 md:mr-6 text-beach-blue bg-beach-blue/20">
-              <Clock className="h-10 w-10" />
+        {/* Moved the "Just 10 Minutes" card below the benefits box */}
+        <div className="card-gradient rounded-2xl shadow-lg p-8 transition-all duration-300 mt-8 md:mt-12 mx-auto max-w-4xl">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-xl text-beach-blue bg-[#eef4ff]/70 shrink-0">
+              <Clock className="h-12 w-12" />
             </div>
-            <div>
-              <h3 className="font-playfair text-2xl font-semibold mb-2 text-center md:text-left">Just 10 Minutes a Day Can Change Your Life</h3>
-              <p className="text-beach-text/90 font-medium italic">Did you know?</p>
+            <div className="flex-1">
+              <h3 className="font-playfair text-2xl md:text-3xl font-semibold mb-2 text-center md:text-left">Just 10 Minutes a Day Can Change Your Life</h3>
+              <p className="text-beach-text/90 font-medium italic mb-4">Did you know?</p>
+              <p className="text-beach-text/80 text-lg">
+                Mouth breathing is a leading cause of sleep and breathing difficulties—yet 90% of mouth breathers aren't even aware they do it.
+              </p>
             </div>
           </div>
-          <p className="text-beach-text/80 text-center">
-            Mouth breathing is a leading cause of sleep and breathing difficulties—yet 90% of mouth breathers aren't even aware they do it.
-          </p>
         </div>
 
         <div className="mt-16 text-center">
