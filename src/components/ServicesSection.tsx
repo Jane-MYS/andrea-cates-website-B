@@ -3,7 +3,6 @@ import React from 'react';
 import SectionHeader from './services/SectionHeader';
 import BenefitsCard from './services/BenefitsCard';
 import HowItWorksCard from './services/HowItWorksCard';
-import TreatmentGoalsSection from './services/TreatmentGoalsSection';
 
 const ServicesSection = () => {
   return (
@@ -20,8 +19,6 @@ const ServicesSection = () => {
           <BenefitsCard />
           <HowItWorksCard />
         </div>
-
-        <TreatmentGoalsSection />
 
         <div className="mt-16 text-center">
           <a 

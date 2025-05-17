@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Heart } from 'lucide-react';
+import TreatmentGoalsSection from './services/TreatmentGoalsSection';
 
 const AboutSection = () => {
   return (
@@ -58,6 +59,11 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
+        </div>
+        
+        {/* Added Treatment Goals Section here */}
+        <div className="mt-16">
+          <TreatmentGoalsSection />
         </div>
       </div>
     </section>
