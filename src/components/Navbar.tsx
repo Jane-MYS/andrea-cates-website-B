@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Sun } from 'lucide-react';
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +35,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center">
-            <Sun size={26} className="text-beach-peach mr-2" />
+            <Avatar className="h-8 w-8 mr-2">
+              <AvatarImage src="/lovable-uploads/1322ee67-25ef-4976-91cd-d3b46a8b1191.png" alt="Andrea Cates logo" />
+            </Avatar>
             <span className="font-playfair text-2xl font-medium">Andrea Cates</span>
           </a>
 

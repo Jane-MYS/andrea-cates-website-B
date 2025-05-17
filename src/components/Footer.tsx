@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Sun } from 'lucide-react';
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,7 +12,9 @@ const Footer = () => {
           {/* Logo and description */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <Sun size={26} className="text-beach-peach mr-2" />
+              <Avatar className="h-7 w-7 mr-2">
+                <AvatarImage src="/lovable-uploads/1322ee67-25ef-4976-91cd-d3b46a8b1191.png" alt="Andrea Cates logo" />
+              </Avatar>
               <span className="font-playfair text-2xl font-medium">Andrea Cates</span>
             </div>
             <p className="text-beach-text/80 mb-6 max-w-md">
