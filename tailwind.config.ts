@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -30,10 +29,9 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				beach: {
-					peach: '#FEF1E6', // Light peach - for backgrounds
+					coral: '#FFB085', // Changed peach to coral
 					blue: '#90AACB',  // Soft blue - for accents
 					sand: '#F9D5A7',  // Warm sand - for secondary elements
-					coral: '#FFB085', // Coral accent - for highlights
 					text: '#5A5A5A',  // Keeping the text color
 				},
 				primary: {
