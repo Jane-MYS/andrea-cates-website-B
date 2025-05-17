@@ -38,7 +38,7 @@ const Navbar = () => {
             <Avatar className="h-8 w-8 mr-2">
               <AvatarImage src="/lovable-uploads/1322ee67-25ef-4976-91cd-d3b46a8b1191.png" alt="Andrea Cates logo" />
             </Avatar>
-            <span className="font-playfair text-2xl font-medium">Andrea Cates</span>
+            <span className="font-handwriting text-2xl">Andrea Cates</span>
           </a>
 
           {/* Mobile menu button */}
