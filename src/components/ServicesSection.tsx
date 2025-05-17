@@ -4,10 +4,10 @@ import {
   Star,
   CheckCircle2,
   Stethoscope,
-  Nose,
-  Tongue,
-  Lips,
-  AirVent
+  Wind,
+  Activity,
+  CircleOff,
+  Lungs
 } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -115,7 +115,7 @@ const ServicesSection = () => {
                 <AccordionTrigger className="hover:no-underline py-4 group">
                   <div className="flex items-center gap-4">
                     <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#e5f1ff] text-beach-blue shrink-0 transition-all duration-300 group-hover:bg-beach-blue group-hover:text-white">
-                      <Nose className="h-7 w-7" />
+                      <Wind className="h-7 w-7" />
                     </div>
                     <div className="text-left">
                       <h3 className="font-playfair text-xl md:text-2xl font-semibold">Nasal Breathing</h3>
@@ -133,7 +133,7 @@ const ServicesSection = () => {
                 <AccordionTrigger className="hover:no-underline py-4 group">
                   <div className="flex items-center gap-4">
                     <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#ffe5e5] text-beach-peach shrink-0 transition-all duration-300 group-hover:bg-beach-peach group-hover:text-white">
-                      <Tongue className="h-7 w-7" />
+                      <Activity className="h-7 w-7" />
                     </div>
                     <div className="text-left">
                       <h3 className="font-playfair text-xl md:text-2xl font-semibold">Proper Swallowing</h3>
@@ -151,7 +151,7 @@ const ServicesSection = () => {
                 <AccordionTrigger className="hover:no-underline py-4 group">
                   <div className="flex items-center gap-4">
                     <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#e8f8ff] text-[#62b5e5] shrink-0 transition-all duration-300 group-hover:bg-[#62b5e5] group-hover:text-white">
-                      <Lips className="h-7 w-7" />
+                      <CircleOff className="h-7 w-7" />
                     </div>
                     <div className="text-left">
                       <h3 className="font-playfair text-xl md:text-2xl font-semibold">Lip Seal</h3>
@@ -169,7 +169,7 @@ const ServicesSection = () => {
                 <AccordionTrigger className="hover:no-underline py-4 group">
                   <div className="flex items-center gap-4">
                     <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#f0f8eb] text-[#7ab55a] shrink-0 transition-all duration-300 group-hover:bg-[#7ab55a] group-hover:text-white">
-                      <AirVent className="h-7 w-7" />
+                      <Lungs className="h-7 w-7" />
                     </div>
                     <div className="text-left">
                       <h3 className="font-playfair text-xl md:text-2xl font-semibold">Tongue Posture</h3>
