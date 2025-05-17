@@ -7,12 +7,12 @@ const AboutSection = () => {
     <section id="about" className="bg-white section-padding">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Image column */}
+          {/* Image column - Updated with new beach image */}
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1020&q=80" 
-                alt="Andrea Cates" 
+                src="/lovable-uploads/77db456d-9ad6-4aa3-b95f-4abc3ff8fef3.png" 
+                alt="Andrea Cates at the beach" 
                 className="w-full h-auto object-cover aspect-[4/5]"
               />
             </div>
