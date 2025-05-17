@@ -1,67 +1,22 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 import { 
-  Send,
   MessageCircle,
   Calendar,
   Mail,
-  Clock,
   CalendarCheck
 } from 'lucide-react';
-import { format } from 'date-fns';
-import { Calendar as CalendarComponent } from "@/components/ui/calendar";
-import { toast } from "sonner";
 
 const ContactSection = () => {
-  const [date, setDate] = useState<Date | undefined>(undefined);
-  const [time, setTime] = useState<string>("");
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [service, setService] = useState<string>("");
-  const [notes, setNotes] = useState<string>("");
-  
-  const availableTimes = [
-    "9:00 AM", "10:00 AM", "11:00 AM", 
-    "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM"
-  ];
-
-  const serviceOptions = [
-    "Life Coaching Session", 
-    "Career Development", 
-    "Personal Growth", 
-    "Stress Management",
-    "Initial Consultation (Free)"
-  ];
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!date || !time || !name || !email || !service) {
-      toast.error("Please fill all required fields");
-      return;
-    }
-    
-    // In a real app, this would connect to a backend service
-    console.log("Appointment booked:", { date, time, name, email, service, notes });
-    
-    toast.success("Appointment scheduled successfully!", {
-      description: `${format(date, "MMMM d, yyyy")} at ${time}`,
-    });
-    
-    // Reset form
-    setDate(undefined);
-    setTime("");
-    setName("");
-    setEmail("");
-    setService("");
-    setNotes("");
+  const handleCalendlyRedirect = () => {
+    // Replace with Andrea's actual Calendly link
+    window.open('https://calendly.com/andreacates', '_blank');
   };
 
   return (
     <section id="contact" className="bg-beach-sand/30 section-padding">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block mb-5 bg-beach-coral/20 px-4 py-2 rounded-full">
+          <div className="inline-block mb-5 bg-beach-blue/20 px-4 py-2 rounded-full">
             <span className="text-beach-blue font-medium">Book an Appointment</span>
           </div>
           <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-6">
@@ -133,113 +88,22 @@ const ContactSection = () => {
             </div>
           </div>
           
-          <div className="md:col-span-3 bg-white rounded-2xl shadow-lg p-8">
-            <h3 className="font-playfair text-2xl font-semibold mb-6">Schedule an Appointment</h3>
-            
-            <form className="space-y-6" onSubmit={handleSubmit}>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">Your Name <span className="text-red-500">*</span></label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="w-full px-4 py-3 rounded-lg border border-beach-sand focus:outline-none focus:ring-2 focus:ring-beach-blue/50"
-                    placeholder="Jane Doe"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">Email Address <span className="text-red-500">*</span></label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-4 py-3 rounded-lg border border-beach-sand focus:outline-none focus:ring-2 focus:ring-beach-blue/50"
-                    placeholder="jane@example.com"
-                    required
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label htmlFor="service" className="block text-sm font-medium mb-2">Service Type <span className="text-red-500">*</span></label>
-                <select 
-                  id="service" 
-                  value={service}
-                  onChange={(e) => setService(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg border border-beach-sand focus:outline-none focus:ring-2 focus:ring-beach-blue/50"
-                  required
-                >
-                  <option value="">Select a service</option>
-                  {serviceOptions.map((option) => (
-                    <option key={option} value={option}>{option}</option>
-                  ))}
-                </select>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">Select Date <span className="text-red-500">*</span></label>
-                  <div className="border border-beach-sand rounded-lg p-2">
-                    <CalendarComponent
-                      mode="single"
-                      selected={date}
-                      onSelect={setDate}
-                      disabled={(date) => {
-                        // Disable past dates, Sundays, and Saturdays
-                        const day = date.getDay();
-                        return date < new Date(new Date().setHours(0, 0, 0, 0)) || day === 0 || day === 6;
-                      }}
-                      className="pointer-events-auto"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Select Time <span className="text-red-500">*</span></label>
-                  <div className="grid grid-cols-2 gap-2">
-                    {availableTimes.map((timeOption) => (
-                      <button
-                        type="button"
-                        key={timeOption}
-                        onClick={() => setTime(timeOption)}
-                        className={`px-4 py-3 rounded-lg text-sm border ${
-                          time === timeOption 
-                            ? 'bg-beach-blue/20 border-beach-blue' 
-                            : 'border-beach-sand hover:bg-beach-coral/10'
-                        } transition-colors`}
-                      >
-                        <Clock className="inline-block w-4 h-4 mr-1" /> {timeOption}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              
-              <div>
-                <label htmlFor="notes" className="block text-sm font-medium mb-2">Notes (Optional)</label>
-                <textarea 
-                  id="notes" 
-                  rows={3} 
-                  value={notes}
-                  onChange={(e) => setNotes(e.target.value)}
-                  className="w-full px-4 py-3 rounded-lg border border-beach-sand focus:outline-none focus:ring-2 focus:ring-beach-blue/50"
-                  placeholder="Any specific concerns or questions..."
-                ></textarea>
-              </div>
-              
-              <div>
-                <button 
-                  type="submit" 
-                  className="beach-button w-full md:w-auto px-8 py-3 rounded-full text-center font-medium flex items-center justify-center"
-                >
-                  <CalendarCheck className="mr-2 w-5 h-5" />
-                  Book Appointment
-                </button>
-              </div>
-            </form>
+          <div className="md:col-span-3 bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center justify-center">
+            <div className="text-center mb-8">
+              <CalendarCheck className="w-16 h-16 text-beach-blue mb-4 mx-auto" />
+              <h3 className="font-playfair text-2xl font-semibold mb-4">Ready to Book Your Session?</h3>
+              <p className="text-beach-text/80 max-w-md mx-auto mb-6">
+                Use my convenient online scheduling system to find a time that works best for you. 
+                Choose from various session types including free consultations and full coaching sessions.
+              </p>
+              <button 
+                onClick={handleCalendlyRedirect}
+                className="beach-button px-8 py-3 rounded-full text-center font-medium flex items-center justify-center mx-auto"
+              >
+                <Calendar className="mr-2 w-5 h-5" />
+                Schedule with Calendly
+              </button>
+            </div>
           </div>
         </div>
       </div>
