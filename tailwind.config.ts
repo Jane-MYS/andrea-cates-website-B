@@ -30,11 +30,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				beach: {
-					peach: '#F5EEE9', // Changed from pink to a soft sand color
-					blue: '#D3E4FD', // Keeping the breezy blue
-					sand: '#F5EEE9',
-					text: '#5A5A5A',
-					sage: '#D1D9CC', // Added a subtle sage green as a new accent
+					peach: '#FEF1E6', // Light peach - for backgrounds
+					blue: '#90AACB',  // Soft blue - for accents
+					sand: '#F9D5A7',  // Warm sand - for secondary elements
+					coral: '#FFB085', // Coral accent - for highlights
+					text: '#5A5A5A',  // Keeping the text color
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
