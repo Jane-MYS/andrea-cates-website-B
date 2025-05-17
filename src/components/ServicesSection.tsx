@@ -1,42 +1,11 @@
 
 import React from 'react';
 import { 
-  Smile, 
-  Heart, 
-  Star, 
-  Sunset 
+  Star,
+  Clock, 
+  CheckCircle2,
+  Stethoscope
 } from 'lucide-react';
-
-const servicesData = [
-  {
-    icon: <Smile className="h-10 w-10" />,
-    title: "Wellness Coaching",
-    description: "Personalized coaching sessions focused on your holistic wellness goals, from stress reduction to life balance.",
-    color: "beach-blue",
-    link: "#contact"
-  },
-  {
-    icon: <Heart className="h-10 w-10" />,
-    title: "Mind-Body Connection",
-    description: "Learn practices that strengthen the connection between your mental and physical health for overall wellbeing.",
-    color: "beach-peach",
-    link: "#contact"
-  },
-  {
-    icon: <Star className="h-10 w-10" />,
-    title: "Life Transitions",
-    description: "Support and guidance through major life changes, helping you find clarity, purpose, and direction.",
-    color: "beach-blue",
-    link: "#contact"
-  },
-  {
-    icon: <Sunset className="h-10 w-10" />,
-    title: "Mindful Living",
-    description: "Develop mindfulness practices that help you live more fully in the present moment and reduce anxiety.",
-    color: "beach-peach",
-    link: "#contact"
-  }
-];
 
 const ServicesSection = () => {
   return (
@@ -47,40 +16,97 @@ const ServicesSection = () => {
             <span className="text-beach-peach font-medium">My Services</span>
           </div>
           <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-6">
-            How I Can Support Your Journey
+            Myofunctional Therapy
           </h2>
-          <p className="text-beach-text/90">
-            I offer a range of services designed to support different aspects of your wellbeing journey.
-            Each approach is tailored to your unique needs and goals.
+          <p className="text-beach-text/90 italic">
+            Changing habits, one insightful session at a time.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {servicesData.map((service, index) => (
-            <div key={index} className="card-gradient rounded-2xl shadow-lg p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl mb-6 text-${service.color} bg-${service.color}/20`}>
-                {service.icon}
-              </div>
-              <h3 className="font-playfair text-2xl font-semibold mb-4">{service.title}</h3>
-              <p className="text-beach-text/80 mb-6">{service.description}</p>
-              <a 
-                href={service.link} 
-                className="inline-flex items-center font-medium text-beach-text hover:text-beach-peach transition-colors"
-              >
-                Learn more
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16">
+          <div className="card-gradient rounded-2xl shadow-lg p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl mb-6 text-beach-blue bg-beach-blue/20">
+              <Star className="h-10 w-10" />
             </div>
-          ))}
+            <h3 className="font-playfair text-2xl font-semibold mb-4">Benefits of Myofunctional Therapy</h3>
+            <p className="text-beach-text/80 mb-6">Myofunctional therapy offers a variety of health and wellness improvements, including:</p>
+            
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <CheckCircle2 className="h-5 w-5 text-beach-blue mr-2 mt-1 flex-shrink-0" />
+                <span>Better quality sleep</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="h-5 w-5 text-beach-blue mr-2 mt-1 flex-shrink-0" />
+                <span>Relief from headaches and jaw pain at the source</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="h-5 w-5 text-beach-blue mr-2 mt-1 flex-shrink-0" />
+                <span>Increased energy levels</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="h-5 w-5 text-beach-blue mr-2 mt-1 flex-shrink-0" />
+                <span>Enhanced effectiveness of CPAP machines and orthodontic oral appliances</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle2 className="h-5 w-5 text-beach-blue mr-2 mt-1 flex-shrink-0" />
+                <span>Elimination of common oral habits such as:</span>
+                <ul className="ml-7 mt-2 space-y-2">
+                  <li>• Nail biting</li>
+                  <li>• Finger sucking</li>
+                  <li>• Chewing or sucking on objects</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div className="card-gradient rounded-2xl shadow-lg p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl mb-6 text-beach-peach bg-beach-peach/20">
+              <Stethoscope className="h-10 w-10" />
+            </div>
+            <h3 className="font-playfair text-2xl font-semibold mb-4">How It Works</h3>
+            
+            <div className="space-y-6">
+              <div>
+                <h4 className="font-playfair text-xl font-medium mb-2">Initial Evaluation</h4>
+                <p className="text-beach-text/80">
+                  Schedule a 60–90 minute virtual or in-person consultation to receive a personalized treatment plan tailored to your wellness goals.
+                </p>
+              </div>
+              
+              <div>
+                <h4 className="font-playfair text-xl font-medium mb-2">Daily Practice</h4>
+                <p className="text-beach-text/80">
+                  Perform custom-designed exercises at home for just 5 minutes, twice a day to improve your breathing, sleep, and overall health.
+                </p>
+              </div>
+              
+              <div>
+                <h4 className="font-playfair text-xl font-medium mb-2">Ongoing Care</h4>
+                <p className="text-beach-text/80">
+                  Most treatment plans consist of 12 sessions, though the number may vary based on your individual needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="card-gradient rounded-2xl shadow-lg p-8 transition-all duration-300 mx-auto max-w-2xl">
+          <div className="flex flex-col md:flex-row items-center mb-6">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl mb-4 md:mb-0 md:mr-6 text-beach-blue bg-beach-blue/20">
+              <Clock className="h-10 w-10" />
+            </div>
+            <div>
+              <h3 className="font-playfair text-2xl font-semibold mb-2 text-center md:text-left">Just 10 Minutes a Day Can Change Your Life</h3>
+              <p className="text-beach-text/90 font-medium italic">Did you know?</p>
+            </div>
+          </div>
+          <p className="text-beach-text/80 text-center">
+            Mouth breathing is a leading cause of sleep and breathing difficulties—yet 90% of mouth breathers aren't even aware they do it.
+          </p>
         </div>
 
         <div className="mt-16 text-center">
-          <h3 className="font-playfair text-2xl font-semibold mb-4">Not sure which service is right for you?</h3>
-          <p className="text-beach-text/90 mb-8 max-w-2xl mx-auto">
-            Schedule a complimentary 20-minute consultation to discuss your needs and discover how we can work together on your wellness journey.
-          </p>
           <a 
             href="#contact" 
             className="beach-button px-8 py-3 rounded-full text-center font-medium inline-flex items-center"
