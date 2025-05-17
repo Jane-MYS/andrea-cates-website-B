@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,12 +19,22 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				playfair: ['Playfair Display', 'serif'],
+				poppins: ['Poppins', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				beach: {
+					peach: '#FDE1D3',
+					blue: '#D3E4FD',
+					sand: '#F5EEE9',
+					text: '#5A5A5A',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
