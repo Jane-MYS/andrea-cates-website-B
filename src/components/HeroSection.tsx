@@ -18,6 +18,9 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-xl fade-in">
+          <p className="font-medium text-xl md:text-2xl text-beach-blue mb-2">
+            Southbay Myofunctional Therapist
+          </p>
           <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-semibold text-beach-text leading-tight mb-6">
             Discover your inner <span className="text-beach-blue">calm</span> and <span className="text-beach-peach">purpose</span>
           </h1>
