@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Avatar, AvatarImage } from '@/components/ui/avatar';
-import { Instagram, TiktokIcon } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
