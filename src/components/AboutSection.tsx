@@ -22,23 +22,23 @@ const AboutSection = () => {
             </div>
           </div>
           
-          {/* Text column */}
+          {/* Text column - Updated with new content */}
           <div>
             <div className="inline-block mb-5 bg-beach-blue/20 px-4 py-2 rounded-full">
               <span className="text-beach-blue font-medium">About Me</span>
             </div>
             <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-6">
-              Helping you find peace and purpose in a busy world
+              Meet Andrea: Your Myofunctional Therapist
             </h2>
             <div className="space-y-4 text-beach-text/90">
               <p>
-                I'm Andrea, a certified wellness coach with over a decade of experience helping clients discover their path to holistic well-being. I believe true wellness encompasses mind, body, and spirit.
+                With over 15 years of experience as a dental hygienist, I have seen firsthand how certain oral habits can impact long-term development and overall quality of life. My passion for helping patients led me to explore the transformative benefits of myofunctional therapy. After extensive research and advanced training, I began offering myofunctional therapy services in 2021.
               </p>
               <p>
-                My approach combines evidence-based practices with intuitive guidance, creating personalized wellness journeys that honor your unique needs and goals. Whether you're seeking stress management, improved relationships, career fulfillment, or simply a greater sense of peace, I'm here to support you.
+                I am committed to a collaborative approach, working closely with dentists, orthodontists, chiropractors, and speech-language pathologists. By partnering with like-minded professionals, I strive to achieve lasting, effective results for every patient.
               </p>
               <p>
-                My journey began after my own struggle with burnout led me to discover the transformative power of mindfulness and intentional living. Today, I'm passionate about helping others find their own balance and joy.
+                Since incorporating myofunctional therapy into my practice, I've seen remarkable improvements in my patients' health, comfort, and quality of life.
               </p>
             </div>
 
