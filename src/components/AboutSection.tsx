@@ -41,23 +41,6 @@ const AboutSection = () => {
                 Since incorporating myofunctional therapy into my practice, I've seen remarkable improvements in my patients' health, comfort, and quality of life.
               </p>
             </div>
-
-            <div className="mt-8 grid grid-cols-2 gap-6">
-              <div className="bg-beach-peach/20 p-4 rounded-lg">
-                <h4 className="font-playfair font-semibold text-xl mb-2">Certifications</h4>
-                <ul className="space-y-1 text-sm">
-                  <li>• Certified Wellness Coach</li>
-                  <li>• Mindfulness Practitioner</li>
-                  <li>• Holistic Nutrition</li>
-                </ul>
-              </div>
-              <div className="bg-beach-blue/20 p-4 rounded-lg">
-                <h4 className="font-playfair font-semibold text-xl mb-2">Philosophy</h4>
-                <p className="text-sm">
-                  I believe in meeting you where you are and creating sustainable practices that integrate seamlessly into your life.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
         
