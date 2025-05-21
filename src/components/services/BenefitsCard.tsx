@@ -5,10 +5,12 @@ import { Star, CheckCircle2 } from 'lucide-react';
 const BenefitsCard = () => {
   return (
     <div className="card-gradient rounded-2xl shadow-lg p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl mb-6 text-beach-blue bg-beach-blue/20">
-        <Star className="h-10 w-10" />
+      <div className="flex items-center mb-6">
+        <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl text-beach-blue bg-beach-blue/20">
+          <Star className="h-10 w-10" />
+        </div>
+        <h3 className="font-playfair text-2xl font-semibold ml-4">Key Benefits</h3>
       </div>
-      <h3 className="font-playfair text-2xl font-semibold mb-4">Key Benefits</h3>
       
       <ul className="space-y-3">
         <li className="flex items-start">
