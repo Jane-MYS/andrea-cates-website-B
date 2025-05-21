@@ -58,7 +58,6 @@ const Navbar = () => {
             <a href="#home" className="nav-link text-base font-medium hover:text-beach-text">Home</a>
             <a href="#about" className="nav-link text-base font-medium hover:text-beach-text">About</a>
             <a href="#services" className="nav-link text-base font-medium hover:text-beach-text">Services</a>
-            <a href="#testimonials" className="nav-link text-base font-medium hover:text-beach-text">Testimonials</a>
             <a 
               href="#contact" 
               className="beach-button text-base font-medium px-5 py-2 rounded-full"
@@ -74,7 +73,6 @@ const Navbar = () => {
             <a href="#home" className="block py-2 font-medium" onClick={() => setMobileMenuOpen(false)}>Home</a>
             <a href="#about" className="block py-2 font-medium" onClick={() => setMobileMenuOpen(false)}>About</a>
             <a href="#services" className="block py-2 font-medium" onClick={() => setMobileMenuOpen(false)}>Services</a>
-            <a href="#testimonials" className="block py-2 font-medium" onClick={() => setMobileMenuOpen(false)}>Testimonials</a>
             <a 
               href="#contact" 
               className="beach-button block text-center py-2 rounded-full font-medium"
