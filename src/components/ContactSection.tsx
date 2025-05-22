@@ -41,7 +41,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">Free Consultation</h4>
-                  <p className="text-sm text-beach-text/70">Schedule a 20-minute call to discuss your needs and goals.</p>
+                  <p className="text-sm text-beach-text/70">Schedule a 15-minute call to discuss your needs and goals.</p>
                 </div>
               </div>
               
