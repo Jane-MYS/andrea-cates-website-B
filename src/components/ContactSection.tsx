@@ -15,7 +15,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="bg-beach-sand/30 section-padding">
+    <section id="contact" className="bg-beach-sand/30 section-padding relative">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-block mb-5 bg-beach-blue/20 px-4 py-2 rounded-full">
@@ -101,6 +101,36 @@ const ContactSection = () => {
               </button>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Visual wave transition */}
+      <div className="visual-transition">
+        {/* Wave SVG */}
+        <div className="wave-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" className="wave wave1">
+            <path fill="#90AACB" fillOpacity="0.3" d="M0,192L40,186.7C80,181,160,171,240,176C320,181,400,203,480,197.3C560,192,640,160,720,133.3C800,107,880,85,960,90.7C1040,96,1120,128,1200,138.7C1280,149,1360,139,1400,133.3L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" className="wave wave2">
+            <path fill="#F9D5A7" fillOpacity="0.4" d="M0,288L40,266.7C80,245,160,203,240,181.3C320,160,400,160,480,170.7C560,181,640,203,720,192C800,181,880,139,960,138.7C1040,139,1120,181,1200,192C1280,203,1360,181,1400,170.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" className="wave wave3">
+            <path fill="#FFF8E3" fillOpacity="0.5" d="M0,32L40,69.3C80,107,160,181,240,202.7C320,224,400,192,480,165.3C560,139,640,117,720,106.7C800,96,880,96,960,85.3C1040,75,1120,53,1200,64C1280,75,1360,117,1400,138.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+          </svg>
+        </div>
+
+        {/* Floating elements */}
+        <div className="floating-elements">
+          <div className="floating-circle circle1"></div>
+          <div className="floating-circle circle2"></div>
+          <div className="floating-circle circle3"></div>
+          <div className="floating-circle circle4"></div>
+          <div className="floating-circle circle5"></div>
+        </div>
+
+        {/* Handwritten message */}
+        <div className="handwritten-message">
+          <p className="font-handwriting">Begin your journey to wellness...</p>
         </div>
       </div>
     </section>
