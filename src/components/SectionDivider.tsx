@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { CalendarCheck, ChevronDown, Sparkles } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ChevronDown, Sparkles } from 'lucide-react';
 
 const SectionDivider = () => {
   return (
@@ -15,20 +14,11 @@ const SectionDivider = () => {
             <div className="h-1 w-12 bg-white/60 rounded-full"></div>
           </div>
           
-          {/* Center content with CTA */}
-          <div className="flex flex-col md:flex-row items-center justify-center space-y-1 md:space-y-0 md:space-x-6">
-            <p className="font-handwriting text-xl md:text-2xl text-white text-center md:text-left">
+          {/* Center content with message - now more prominent */}
+          <div className="flex items-center justify-center">
+            <p className="font-handwriting text-2xl md:text-3xl text-white text-center tracking-wide">
               Ready to transform your wellness?
             </p>
-            <a 
-              href="#contact"
-              className="cta-button group flex items-center space-x-2 px-5 py-2 bg-white rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-            >
-              <span className="text-beach-blue font-medium">Book Now</span>
-              <span className="p-1 rounded-full bg-beach-blue/20 group-hover:bg-beach-blue/30 transition-colors">
-                <CalendarCheck className="w-4 h-4 text-beach-blue" />
-              </span>
-            </a>
           </div>
           
           {/* Right side with sparkles */}
