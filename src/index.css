@@ -159,6 +159,115 @@
   width: 100%;
 }
 
+/* Section Divider styles */
+.section-divider {
+  position: relative;
+  z-index: 1;
+  margin: -1px 0;
+}
+
+.divider-wave-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.divider-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-divider .wave1 {
+  animation: divider-wave-animation 20s linear infinite;
+  opacity: 0.8;
+}
+
+.section-divider .wave2 {
+  animation: divider-wave-animation 15s linear infinite reverse;
+  animation-delay: -5s;
+  opacity: 0.6;
+}
+
+.section-divider .wave3 {
+  animation: divider-wave-animation 10s linear infinite;
+  animation-delay: -2s;
+  opacity: 0.7;
+}
+
+@keyframes divider-wave-animation {
+  0% {
+    transform: translateX(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-1%) scaleY(1.05);
+  }
+  100% {
+    transform: translateX(0) scaleY(1);
+  }
+}
+
+.divider-floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.divider-floating-circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  filter: blur(2px);
+}
+
+.section-divider .circle1 {
+  width: 10px;
+  height: 10px;
+  left: 15%;
+  top: 40%;
+  animation: divider-float 8s ease-in-out infinite;
+  background-color: rgba(144, 170, 203, 0.5);
+}
+
+.section-divider .circle2 {
+  width: 15px;
+  height: 15px;
+  left: 55%;
+  top: 60%;
+  animation: divider-float 12s ease-in-out infinite;
+  animation-delay: -4s;
+  background-color: rgba(249, 213, 167, 0.5);
+}
+
+.section-divider .circle3 {
+  width: 8px;
+  height: 8px;
+  left: 80%;
+  top: 30%;
+  animation: divider-float 9s ease-in-out infinite;
+  animation-delay: -7s;
+  background-color: rgba(255, 248, 227, 0.5);
+}
+
+@keyframes divider-float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-15px) translateX(5px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
 /* Visual transition styles */
 .visual-transition {
   position: absolute;
