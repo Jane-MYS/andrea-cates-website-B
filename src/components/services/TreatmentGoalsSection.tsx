@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Lungs, SmilePlus, Tongue, Apple } from 'lucide-react';
+import { Wind, SmilePlus, CircleDot, Apple } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const TreatmentGoalsSection = () => {
@@ -24,7 +24,7 @@ const TreatmentGoalsSection = () => {
             <AccordionTrigger className="hover:no-underline py-4 group">
               <div className="flex items-center gap-4">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#e5f1ff] text-beach-blue shrink-0 transition-all duration-300 group-hover:bg-beach-blue group-hover:text-white">
-                  <Lungs className="h-7 w-7" />
+                  <Wind className="h-7 w-7" />
                 </div>
                 <div className="text-left">
                   <h3 className="font-playfair text-xl md:text-2xl font-semibold">Nasal Breathing</h3>
@@ -60,7 +60,7 @@ const TreatmentGoalsSection = () => {
             <AccordionTrigger className="hover:no-underline py-4 group">
               <div className="flex items-center gap-4">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#f0f8eb] text-[#7ab55a] shrink-0 transition-all duration-300 group-hover:bg-[#7ab55a] group-hover:text-white">
-                  <Tongue className="h-7 w-7" />
+                  <CircleDot className="h-7 w-7" />
                 </div>
                 <div className="text-left">
                   <h3 className="font-playfair text-xl md:text-2xl font-semibold">Tongue Posture</h3>
