@@ -182,13 +182,13 @@
 }
 
 .section-divider .wave1 {
-  animation: divider-wave-animation 30s linear infinite;
-  opacity: 0.7;
+  animation: divider-wave-animation 25s linear infinite;
+  opacity: 0.6;
 }
 
 .section-divider .wave2 {
-  animation: divider-wave-animation 25s linear infinite reverse;
-  opacity: 0.5;
+  animation: divider-wave-animation 20s linear infinite reverse;
+  opacity: 0.4;
 }
 
 @keyframes divider-wave-animation {
@@ -196,7 +196,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-2%);
+    transform: translateX(-1.5%);
   }
   100% {
     transform: translateX(0);

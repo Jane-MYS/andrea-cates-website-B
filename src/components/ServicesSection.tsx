@@ -8,7 +8,7 @@ import { AirVent } from 'lucide-react';
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="bg-beach-sand/30 section-padding">
+    <section id="services" className="bg-beach-sand/30 section-padding pb-8">
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeader 
           badge="My Services"
@@ -41,7 +41,7 @@ const ServicesSection = () => {
           <HowItWorksCard />
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-8 text-center">
           <a 
             href="#contact" 
             className="beach-button px-8 py-3 rounded-full text-center font-medium inline-flex items-center"
