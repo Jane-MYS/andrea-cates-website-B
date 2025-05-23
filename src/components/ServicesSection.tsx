@@ -40,15 +40,6 @@ const ServicesSection = () => {
           <BenefitsCard />
           <HowItWorksCard />
         </div>
-
-        <div className="mt-8 text-center">
-          <a 
-            href="#contact" 
-            className="beach-button px-8 py-3 rounded-full text-center font-medium inline-flex items-center"
-          >
-            Schedule a Consultation
-          </a>
-        </div>
       </div>
     </section>
   );
