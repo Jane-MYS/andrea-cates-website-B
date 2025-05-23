@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   MessageCircle,
@@ -18,9 +17,6 @@ const ContactSection = () => {
     <section id="contact" className="bg-beach-sand/30 pt-8 pb-16 md:pb-24 relative">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-block mb-3 bg-beach-blue/20 px-4 py-2 rounded-full">
-            <span className="text-beach-blue font-medium">Book an Appointment</span>
-          </div>
           <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-4">
             Schedule Your Session Today
           </h2>
