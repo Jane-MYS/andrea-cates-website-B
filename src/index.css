@@ -139,17 +139,6 @@
   box-shadow: 0 6px 16px rgba(144, 170, 203, 0.5);
 }
 
-.beach-button {
-  background: linear-gradient(90deg, #90AACB 0%, #FFF8E3 100%);
-  transition: all 0.3s ease;
-}
-
-.beach-button:hover {
-  background: linear-gradient(90deg, #FFF8E3 0%, #90AACB 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
 .nav-link {
   position: relative;
 }

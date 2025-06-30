@@ -25,10 +25,10 @@ const Navbar = () => {
   return (
     <nav 
       className={cn(
-        "fixed w-full z-50 transition-all duration-300",
+        "fixed w-full z-50 transition-all duration-300 bg-transparent",
         isScrolled 
-          ? "bg-white/80 backdrop-blur-md py-3 shadow-sm" 
-          : "bg-transparent py-5"
+          ? "py-3" 
+          : "py-5"
       )}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -61,7 +61,7 @@ const Navbar = () => {
             <a href="#services" className="nav-link text-base font-medium hover:text-beach-text">Services</a>
             <a 
               href="#contact" 
-              className="beach-button text-base font-medium px-5 py-2 rounded-full"
+              className="text-base font-medium px-5 py-2 rounded-full hover:text-beach-text transition-colors"
             >
               Get in touch
             </a>
@@ -70,13 +70,13 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-md p-5 space-y-4 transition-all duration-300">
+          <div className="md:hidden absolute top-full left-0 right-0 p-5 space-y-4 transition-all duration-300">
             <a href="#home" className="block py-2 font-medium" onClick={() => setMobileMenuOpen(false)}>Home</a>
             <a href="#about" className="block py-2 font-medium" onClick={() => setMobileMenuOpen(false)}>About</a>
             <a href="#services" className="block py-2 font-medium" onClick={() => setMobileMenuOpen(false)}>Services</a>
             <a 
               href="#contact" 
-              className="beach-button block text-center py-2 rounded-full font-medium"
+              className="block text-center py-2 rounded-full font-medium hover:text-beach-text transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Get in touch
