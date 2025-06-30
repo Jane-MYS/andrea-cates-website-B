@@ -39,6 +39,10 @@ const Navbar = () => {
               src="/lovable-uploads/2dacaecf-a0f6-47e6-aad1-bf23b55496ca.png" 
               alt="Andrea Cates - Myofunctional Therapist" 
               className="h-12 md:h-16"
+              onError={(e) => {
+                console.log('Logo failed to load:', e.currentTarget.src);
+                e.currentTarget.style.display = 'none';
+              }}
             />
           </a>
 
