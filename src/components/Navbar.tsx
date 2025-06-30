@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#" className="flex items-center">
             <img 
-              src="/lovable-uploads/3db86c16-06af-4a2e-90f9-0a1535681f2f.png" 
+              src="/lovable-uploads/2dacaecf-a0f6-47e6-aad1-bf23b55496ca.png" 
               alt="Andrea Cates - Myofunctional Therapist" 
               className="h-12 md:h-16"
             />
