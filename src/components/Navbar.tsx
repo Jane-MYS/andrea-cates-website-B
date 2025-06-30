@@ -35,10 +35,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center">
-            <Avatar className="h-8 w-8 mr-2">
-              <AvatarImage src="/lovable-uploads/1322ee67-25ef-4976-91cd-d3b46a8b1191.png" alt="Andrea Cates logo" />
-            </Avatar>
-            <span className="font-handwriting text-2xl">Andrea Cates</span>
+            <img 
+              src="/lovable-uploads/3db86c16-06af-4a2e-90f9-0a1535681f2f.png" 
+              alt="Andrea Cates - Myofunctional Therapist" 
+              className="h-12 md:h-16"
+            />
           </a>
 
           {/* Mobile menu button */}
