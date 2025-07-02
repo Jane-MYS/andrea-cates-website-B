@@ -59,8 +59,8 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-medium mb-1">Email Inquiry</h4>
                   <p className="text-sm text-beach-text/70">Send a message with any questions about coaching services.</p>
-                  <a href="mailto:hello@andreacates.com" className="text-beach-blue hover:underline text-sm font-medium mt-1 inline-block">
-                    hello@andreacates.com
+                  <a href="mailto:andreacates@gmail.com" className="text-beach-blue hover:underline text-sm font-medium mt-1 inline-block">
+                    andreacates@gmail.com
                   </a>
                 </div>
               </div>
@@ -68,10 +68,10 @@ const ContactSection = () => {
               <div>
                 <h4 className="font-medium mb-3">Follow Me</h4>
                 <div className="flex space-x-3">
-                  <a href="https://www.instagram.com/andrea_myofunctionaltherapist" className="bg-beach-blue/20 p-2.5 rounded-full hover:bg-beach-blue/30 transition-colors">
+                  <a href="https://www.instagram.com/andrea_myofunctionaltherapist" className="bg-beach-blue/20 p-2.5 rounded-full hover:bg-beach-blue/30 transition-colors" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                     <Instagram className="w-5 h-5" />
                   </a>
-                  <a href="https://www.tiktok.com/@myofunctionaltherapist" className="bg-beach-sand/40 p-2.5 rounded-full hover:bg-beach-sand/60 transition-colors">
+                  <a href="https://www.tiktok.com/@myofunctionaltherapist" className="bg-beach-sand/40 p-2.5 rounded-full hover:bg-beach-sand/60 transition-colors" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path fillRule="evenodd" d="M9 1.5C9 1.5 9 1.5 9 1.5C9 1.10218 9.15804 0.720644 9.43934 0.43934C9.72064 0.158035 10.1022 0 10.5 0L13.5 0C13.8978 0 14.2794 0.158035 14.5607 0.43934C14.842 0.720644 15 1.10218 15 1.5C15 1.5 15 1.5 15 1.5V3H17.5C17.8978 3 18.2794 3.15804 18.5607 3.43934C18.842 3.72064 19 4.10218 19 4.5C19 4.89782 18.842 5.27936 18.5607 5.56066C18.2794 5.84196 17.8978 6 17.5 6H15V7.5C15 10.5 18 10.5 18 10.5V13.5C18 13.5 16.5 13.5 15 13.5C13.5 13.5 12 12 12 10.5V1.5H10.5C10.5 4.5 7.5 4.5 7.5 4.5V7.5C7.5 7.5 9 7.5 9 7.5V10.5C9 15 12 16.5 15 16.5V19.5C12 19.5 9 18 9 13.5V10.5C6 10.5 4.5 7.5 4.5 7.5C4.5 7.5 4.5 4.5 7.5 4.5C7.5 4.5 9 4.5 9 1.5Z" clipRule="evenodd" />
                     </svg>
@@ -113,15 +113,6 @@ const ContactSection = () => {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" className="wave wave3">
             <path fill="#FFF8E3" fillOpacity="0.5" d="M0,32L40,69.3C80,107,160,181,240,202.7C320,224,400,192,480,165.3C560,139,640,117,720,106.7C800,96,880,96,960,85.3C1040,75,1120,53,1200,64C1280,75,1360,117,1400,138.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
           </svg>
-        </div>
-
-        {/* Floating elements */}
-        <div className="floating-elements">
-          <div className="floating-circle circle1"></div>
-          <div className="floating-circle circle2"></div>
-          <div className="floating-circle circle3"></div>
-          <div className="floating-circle circle4"></div>
-          <div className="floating-circle circle5"></div>
         </div>
 
         {/* Handwritten message */}

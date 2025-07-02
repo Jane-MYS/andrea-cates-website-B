@@ -1,4 +1,3 @@
-
 import React from 'react';
 import SectionHeader from './services/SectionHeader';
 import BenefitsCard from './services/BenefitsCard';
@@ -8,7 +7,7 @@ import { AirVent } from 'lucide-react';
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="bg-beach-sand/30 section-padding pb-8">
+    <section id="services" className="bg-beach-sand/30 py-10 md:py-14 pb-8">
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeader 
           badge="My Services"

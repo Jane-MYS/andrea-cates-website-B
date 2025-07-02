@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Wind, SmilePlus, CircleDot, Apple } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -33,7 +32,7 @@ const TreatmentGoalsSection = () => {
             </AccordionTrigger>
             <AccordionContent className="pl-20">
               <p className="text-beach-text/80 text-lg leading-relaxed pb-4">
-                Daytime nasal breathing helps transform the night time breathing
+                Daytime nasal breathing helps transform the night time breathing to get longer deep restorative sleep
               </p>
             </AccordionContent>
           </AccordionItem>
@@ -51,7 +50,7 @@ const TreatmentGoalsSection = () => {
             </AccordionTrigger>
             <AccordionContent className="pl-20">
               <p className="text-beach-text/80 text-lg leading-relaxed pb-4">
-                Strengthening the mouth muscles keep the lips sealed to encourage nasal breathing
+                Lip seal encourage nasal breathing and lowers the risk of gum disease and cavities
               </p>
             </AccordionContent>
           </AccordionItem>
@@ -69,7 +68,7 @@ const TreatmentGoalsSection = () => {
             </AccordionTrigger>
             <AccordionContent className="pl-20">
               <p className="text-beach-text/80 text-lg leading-relaxed pb-4">
-                Strength and coordination of the tongue help to habitually place the tongue on the roof of the mouth
+                Provides the right support for the jaw joints, palate width and opens up the airway
               </p>
             </AccordionContent>
           </AccordionItem>
@@ -81,13 +80,13 @@ const TreatmentGoalsSection = () => {
                   <Apple className="h-7 w-7" />
                 </div>
                 <div className="text-left">
-                  <h3 className="font-playfair text-xl md:text-2xl font-semibold">Correct Swallowing</h3>
+                  <h3 className="font-playfair text-xl md:text-2xl font-semibold">Swallowing Pattern</h3>
                 </div>
               </div>
             </AccordionTrigger>
             <AccordionContent className="pl-20">
               <p className="text-beach-text/80 text-lg leading-relaxed pb-4">
-                Proper swallowing keeps the tongue away from pushing against teeth and from blocking the airway
+                Proper swallowing keeps the tongue from pushing against teeth and improves digestion
               </p>
             </AccordionContent>
           </AccordionItem>

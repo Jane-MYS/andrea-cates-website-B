@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Avatar, AvatarImage } from '@/components/ui/avatar';
@@ -7,15 +6,15 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full z-50 bg-white border-b border-gray-100 shadow-sm py-4">
+    <nav className="bg-white border-b border-gray-100 shadow-sm py-4">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center">
             <img 
-              src="/lovable-uploads/5fa18f9b-06b1-41a2-9df1-212b92e54ab4.png" 
+              src="/lovable-uploads/logo.png" 
               alt="Andrea Cates - Myofunctional Therapist" 
-              className="h-12 md:h-16"
+              className="h-[3.75rem] md:h-20"
             />
           </a>
 

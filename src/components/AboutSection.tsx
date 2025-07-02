@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { Heart } from 'lucide-react';
 import TreatmentGoalsSection from './services/TreatmentGoalsSection';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-white section-padding">
+    <section id="about" className="bg-white py-6 md:py-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image column - Updated with new beach image */}
@@ -17,9 +16,6 @@ const AboutSection = () => {
                 className="w-full h-auto object-cover aspect-[4/5]"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-beach-peach p-4 rounded-xl shadow-lg">
-              <Heart className="w-12 h-12 text-white" />
-            </div>
           </div>
           
           {/* Text column - Updated with new content */}
@@ -27,7 +23,7 @@ const AboutSection = () => {
             <div className="inline-block mb-5 bg-beach-blue/20 px-4 py-2 rounded-full">
               <span className="text-beach-blue font-medium">About Me</span>
             </div>
-            <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-6">
+            <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-6" style={{ color: '#967E72' }}>
               Meet Andrea: Your Myofunctional Therapist
             </h2>
             <div className="space-y-4 text-beach-text/90">

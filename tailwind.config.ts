@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -20,7 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				playfair: ['Playfair Display', 'serif'],
+				playfair: ["Marcellus", "serif"],
+				sans: ["Marcellus", "serif"],
+				serif: ["Marcellus", "serif"],
 				poppins: ['Poppins', 'sans-serif'],
 				handwriting: ['Dancing Script', 'cursive'], // Added handwriting font
 			},
