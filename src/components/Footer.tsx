@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <Avatar className="h-7 w-7 mr-2">
-                <AvatarImage src="/lovable-uploads/1322ee67-25ef-4976-91cd-d3b46a8b1191.png" alt="Andrea Cates logo" />
+                <AvatarImage src="lovable-uploads/1322ee67-25ef-4976-91cd-d3b46a8b1191.png" alt="Andrea Cates logo" />
               </Avatar>
               <span className="font-playfair text-2xl font-medium">Andrea Cates</span>
             </div>
@@ -30,17 +30,6 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
-          </div>
-          
-          {/* Links */}
-          <div>
-            <h4 className="font-playfair font-medium text-lg mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><a href="#home" className="text-beach-text/80 hover:text-beach-peach transition-colors">Home</a></li>
-              <li><a href="#about" className="text-beach-text/80 hover:text-beach-peach transition-colors">About</a></li>
-              <li><a href="#services" className="text-beach-text/80 hover:text-beach-peach transition-colors">Services</a></li>
-              <li><a href="#contact" className="text-beach-text/80 hover:text-beach-peach transition-colors">Contact</a></li>
-            </ul>
           </div>
           
           {/* Contact info */}

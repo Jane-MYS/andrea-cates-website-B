@@ -17,6 +17,11 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run build
+      - run: cp dist/index.html dist/404.html
+      - name: Configure git user
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

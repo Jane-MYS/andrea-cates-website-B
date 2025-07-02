@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#" className="flex items-center">
             <img 
-              src="/lovable-uploads/logo.png" 
+              src="lovable-uploads/logo.png" 
               alt="Andrea Cates - Myofunctional Therapist" 
               className="h-[3.75rem] md:h-20"
             />
@@ -32,31 +33,35 @@ const Navbar = () => {
 
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="nav-link text-base font-medium text-gray-800 hover:text-beach-text">Home</a>
-            <a href="#about" className="nav-link text-base font-medium text-gray-800 hover:text-beach-text">About</a>
-            <a href="#services" className="nav-link text-base font-medium text-gray-800 hover:text-beach-text">Services</a>
-            <a 
-              href="#contact" 
-              className="text-base font-medium px-5 py-2 rounded-full text-gray-800 hover:text-beach-text transition-colors"
+            <ScrollLink to="about" smooth={true} duration={500} offset={-80} className="nav-link text-base font-medium text-gray-800 hover:text-beach-text cursor-pointer">About</ScrollLink>
+            <ScrollLink to="services" smooth={true} duration={500} offset={-80} className="nav-link text-base font-medium text-gray-800 hover:text-beach-text cursor-pointer">Services</ScrollLink>
+            <ScrollLink 
+              to="contact" 
+              smooth={true} 
+              duration={500} 
+              offset={-80}
+              className="text-base font-medium px-5 py-2 rounded-full text-gray-800 hover:text-beach-text transition-colors cursor-pointer"
             >
               Get in touch
-            </a>
+            </ScrollLink>
           </div>
         </div>
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-lg p-5 space-y-4 transition-all duration-300">
-            <a href="#home" className="block py-2 font-medium text-gray-800" onClick={() => setMobileMenuOpen(false)}>Home</a>
-            <a href="#about" className="block py-2 font-medium text-gray-800" onClick={() => setMobileMenuOpen(false)}>About</a>
-            <a href="#services" className="block py-2 font-medium text-gray-800" onClick={() => setMobileMenuOpen(false)}>Services</a>
-            <a 
-              href="#contact" 
-              className="block text-center py-2 rounded-full font-medium text-gray-800 hover:text-beach-text transition-colors"
+            <ScrollLink to="about" smooth={true} duration={500} offset={-80} className="block py-2 font-medium text-gray-800 cursor-pointer" onClick={() => setMobileMenuOpen(false)}>About</ScrollLink>
+            <ScrollLink to="services" smooth={true} duration={500} offset={-80} className="block py-2 font-medium text-gray-800 cursor-pointer" onClick={() => setMobileMenuOpen(false)}>Services</ScrollLink>
+            <ScrollLink 
+              to="contact" 
+              smooth={true} 
+              duration={500} 
+              offset={-80}
+              className="block text-center py-2 rounded-full font-medium text-gray-800 hover:text-beach-text transition-colors cursor-pointer"
               onClick={() => setMobileMenuOpen(false)}
             >
               Get in touch
-            </a>
+            </ScrollLink>
           </div>
         )}
       </div>
