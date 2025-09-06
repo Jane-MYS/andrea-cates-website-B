@@ -45,6 +45,14 @@ const ServicesSection = () => {
         <div className="text-center mt-16">
           <Link 
             to="/packages"
+            onClick={() => {
+              // Force scroll to top when navigating
+              setTimeout(() => {
+                window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+              }, 0);
+            }}
             className="inline-block bg-beach-blue hover:bg-beach-blue/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-xl"
           >
             See Packages & Pricing

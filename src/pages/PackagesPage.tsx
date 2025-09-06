@@ -6,16 +6,25 @@ const PackagesPage = () => {
   useEffect(() => {
     // Scroll to top when component mounts
     const scrollToTop = () => {
-      window.scrollTo(0, 0);
+      // Try multiple methods to ensure scrolling works
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
       document.documentElement.scrollTop = 0;
       document.body.scrollTop = 0;
+      
+      // Also try scrolling the main container if it exists
+      const mainContainer = document.querySelector('main') || document.querySelector('#root');
+      if (mainContainer) {
+        mainContainer.scrollTop = 0;
+      }
     };
     
     // Immediate scroll
     scrollToTop();
     
-    // Also scroll after a small delay to ensure it works
+    // Multiple delayed scrolls to ensure it works
+    setTimeout(scrollToTop, 50);
     setTimeout(scrollToTop, 100);
+    setTimeout(scrollToTop, 200);
   }, []);
 
   const handleEmailRedirect = () => {
