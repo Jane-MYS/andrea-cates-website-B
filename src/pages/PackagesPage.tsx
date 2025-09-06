@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Check, Clock, DollarSign, Heart, Target, Zap, Star, Sparkles, ArrowRight } from 'lucide-react';
 
 const PackagesPage = () => {
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleEmailRedirect = () => {
     window.location.href = 'mailto:andrea@andreacates.com';
   };
