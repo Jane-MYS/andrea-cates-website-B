@@ -44,6 +44,7 @@ export default {
 					'burgundy': '#6A1E2E',     // Depth/contrast (headings, footer)
 					'sage-green': '#9CAF88',   // Balance accent (icons, illustrations)
 					'gold': '#D4A373',         // Luxury touch (subtle details)
+					'card-pink': '#E4BDBD',    // Contact card background
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
