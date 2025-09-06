@@ -2,8 +2,16 @@ import React from 'react';
 import { Waves } from 'lucide-react';
 
 const HeroSection = () => {
+  const scrollToServices = (e) => {
+    e.preventDefault();
+    const servicesSection = document.getElementById('services');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div id="home" className="relative min-h-screen flex items-center pt-20 pb-16 overflow-hidden">
+    <div id="home" className="relative h-[80vh] flex items-center pt-20 pb-16 overflow-hidden">
       {/* Background image with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
@@ -20,7 +28,7 @@ const HeroSection = () => {
           <p className="font-medium text-xl md:text-2xl text-beach-blue mb-2">
             South Bay Orofacial Myofunctional Therapy
           </p>
-          <h1 className="font-corinthia text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-10" style={{ color: '#967E72' }}>
+          <h1 className="font-beautifully-delicious text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-10" style={{ color: '#967E72' }}>
             Change your Habits,<br />
             <span className="inline-block ml-16 md:ml-40 mt-6 whitespace-nowrap">Change your Life</span>
           </h1>
@@ -38,6 +46,7 @@ const HeroSection = () => {
             </a>
             <a 
               href="#services" 
+              onClick={scrollToServices}
               className="bg-beach-peach/30 text-[#4c6085] px-10 py-4 rounded-full font-semibold shadow flex items-center gap-2 text-lg transition-all duration-200 hover:bg-beach-peach/60 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-beach-peach/60"
             >
               <span>Explore Services</span>

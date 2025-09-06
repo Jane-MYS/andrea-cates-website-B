@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SectionHeader from './services/SectionHeader';
 import BenefitsCard from './services/BenefitsCard';
 import HowItWorksCard from './services/HowItWorksCard';
@@ -38,6 +39,20 @@ const ServicesSection = () => {
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           <BenefitsCard />
           <HowItWorksCard />
+        </div>
+
+        {/* Packages & Pricing Section */}
+        <div className="text-center mt-16">
+          <Link 
+            to="/packages"
+            className="inline-block bg-beach-blue hover:bg-beach-blue/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-xl"
+          >
+            See Packages & Pricing
+          </Link>
+          <p className="text-beach-text/80 mt-4 max-w-2xl mx-auto text-lg">
+            Every journey is unique — our programs are designed to fit your needs and budget. Learn more about session options, pricing, and what's included in each package.
+            
+          </p>
         </div>
       </div>
     </section>

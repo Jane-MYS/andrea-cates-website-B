@@ -11,8 +11,8 @@ const AboutSection = () => {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="lovable-uploads/77db456d-9ad6-4aa3-b95f-4abc3ff8fef3.png" 
-                alt="Andrea Cates at the beach" 
+                src="lovable-uploads/Andrea-personal-photo.jpeg" 
+                alt="Andrea Cates" 
                 className="w-full h-auto object-cover aspect-[4/5]"
               />
             </div>
