@@ -15,8 +15,10 @@ const SectionHeader = ({ badge, badgeColor, title, subtitle }: SectionHeaderProp
         return 'bg-beach-peach/20 text-beach-peach';
       case 'blue':
         return 'bg-beach-blue/20 text-beach-blue';
+      case 'sage-green':
+        return 'bg-theme-sage-green/20 text-theme-sage-green';
       default:
-        return 'bg-beach-peach/20 text-beach-peach';
+        return 'bg-theme-sage-green/20 text-theme-sage-green';
     }
   };
 
@@ -25,7 +27,7 @@ const SectionHeader = ({ badge, badgeColor, title, subtitle }: SectionHeaderProp
       <div className={`inline-block mb-5 ${getBadgeClasses()} px-4 py-2 rounded-full`}>
         <span className="font-medium">{badge}</span>
       </div>
-      <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-6">
+        <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-6 text-theme-vivid-red">
         {title}
       </h2>
       {subtitle && (

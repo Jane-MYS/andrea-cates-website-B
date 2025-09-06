@@ -27,33 +27,33 @@
 
 @layer base {
   :root {
-    --background: 30 80% 97%;
-    --foreground: 220 20% 20%;
+    --background: 0 0% 98%; /* Light red background */
+    --foreground: 0 0% 43%; /* Gray text */
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 20%;
+    --card-foreground: 0 0% 43%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 20%;
+    --popover-foreground: 0 0% 43%;
 
-    --primary: 210 38% 68%;
-    --primary-foreground: 220 20% 20%;
+    --primary: 0 100% 65%; /* Vivid red */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 34 80% 82%;
-    --secondary-foreground: 220 20% 20%;
+    --secondary: 0 0% 90%; /* Light background */
+    --secondary-foreground: 0 0% 43%;
 
-    --muted: 220 20% 96%;
-    --muted-foreground: 220 20% 60%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 48 100% 95%; /* Updated accent (previously 17 100% 76%) */
-    --accent-foreground: 220 20% 20%;
+    --accent: 0 0% 90%; /* Rose accent */
+    --accent-foreground: 0 0% 43%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 90%;
-    --input: 220 20% 90%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 100% 65%;
 
     --radius: 0.5rem;
 

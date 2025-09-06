@@ -4,14 +4,14 @@ import { ChevronDown, Sparkles } from 'lucide-react';
 
 const SectionDivider = () => {
   return (
-    <div className="section-divider relative py-3 md:py-4 overflow-hidden bg-gradient-to-r from-beach-blue to-beach-sand/90">
+    <div className="section-divider relative py-3 md:py-4 overflow-hidden bg-gradient-to-r from-theme-burgundy to-theme-vivid-red">
       <div className="container mx-auto">
         {/* Main ribbon content */}
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-6">
           {/* Left side with sparkles */}
           <div className="hidden md:flex items-center">
-            <Sparkles className="h-5 w-5 text-white animate-pulse mr-2" />
-            <div className="h-1 w-12 bg-white/60 rounded-full"></div>
+            <Sparkles className="h-5 w-5 text-theme-gold animate-pulse mr-2" />
+            <div className="h-1 w-12 bg-theme-gold/60 rounded-full"></div>
           </div>
           
           {/* Center content with message - now more prominent */}
@@ -23,8 +23,8 @@ const SectionDivider = () => {
           
           {/* Right side with sparkles */}
           <div className="hidden md:flex items-center">
-            <div className="h-1 w-12 bg-white/60 rounded-full"></div>
-            <Sparkles className="h-5 w-5 text-white animate-pulse ml-2" />
+            <div className="h-1 w-12 bg-theme-gold/60 rounded-full"></div>
+            <Sparkles className="h-5 w-5 text-theme-gold animate-pulse ml-2" />
           </div>
         </div>
         

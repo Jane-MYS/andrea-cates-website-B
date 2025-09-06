@@ -16,7 +16,7 @@ const ContactSection = () => {
     <section id="contact" className="bg-beach-sand/30 pt-8 pb-8 md:pb-12 relative">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-4">
+          <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-4 text-theme-vivid-red">
             Schedule Your Session Today
           </h2>
           <p className="text-beach-text/90">
@@ -30,10 +30,10 @@ const ContactSection = () => {
             {/* Main Booking Section */}
             <div className="text-center mb-6">
               <CalendarCheck className="w-20 h-20 text-beach-blue mx-auto mb-6" />
-              <h3 className="font-playfair text-3xl font-semibold mb-4">Ready to Book Your Session?</h3>
+              <h3 className="font-playfair text-3xl font-semibold mb-4 text-theme-vivid-red">Ready to Book Your Session?</h3>
               <button 
                 onClick={handleEmailRedirect}
-                className="bg-beach-blue hover:bg-beach-blue/90 text-white px-8 py-4 rounded-full text-lg font-medium flex items-center justify-center transition-colors mx-auto"
+                className="bg-theme-vivid-red hover:bg-theme-vivid-red/90 text-white px-8 py-4 rounded-full text-lg font-medium flex items-center justify-center transition-colors mx-auto"
               >
                 <Calendar className="mr-3 w-6 h-6" />
                 Schedule with Me Now

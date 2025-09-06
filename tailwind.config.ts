@@ -32,11 +32,18 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				beach: {
-					coral: '#FFF8E3', // Updated from #FFB085 to #FFF8E3
-					blue: '#90AACB',  // Soft blue - for accents
-					sand: '#F9D5A7',  // Warm sand - for secondary elements
-					text: '#5A5A5A',  // Keeping the text color
+				// New color theme
+				theme: {
+					'light-red': '#FAF3F3',    // Backgrounds
+					'beige': '#F5E2C8',        // Backgrounds
+					'warm-brown': '#BCA88C',   // Backgrounds
+					'gray': '#6E6E6E',         // Primary text
+					'black': '#000000',        // Titles
+					'vivid-red': '#FF495C',    // Primary accent (buttons, CTAs)
+					'rose': '#E8A0A6',         // Secondary accent (hover states)
+					'burgundy': '#6A1E2E',     // Depth/contrast (headings, footer)
+					'sage-green': '#9CAF88',   // Balance accent (icons, illustrations)
+					'gold': '#D4A373',         // Luxury touch (subtle details)
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',

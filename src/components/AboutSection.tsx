@@ -4,7 +4,7 @@ import TreatmentGoalsSection from './services/TreatmentGoalsSection';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-white py-6 md:py-8">
+    <section id="about" className="bg-theme-beige py-6 md:py-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image column - Updated with new beach image */}
@@ -20,13 +20,13 @@ const AboutSection = () => {
           
           {/* Text column - Updated with new content */}
           <div>
-            <div className="inline-block mb-5 bg-beach-blue/20 px-4 py-2 rounded-full">
-              <span className="text-beach-blue font-medium">About Me</span>
+            <div className="inline-block mb-5 bg-theme-sage-green/20 px-4 py-2 rounded-full">
+              <span className="text-theme-sage-green font-medium">About Me</span>
             </div>
-            <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-6" style={{ color: '#967E72' }}>
+            <h2 className="font-playfair text-3xl md:text-4xl font-semibold mb-6 text-theme-vivid-red">
               Meet Andrea: Your Myofunctional Therapist
             </h2>
-            <div className="space-y-4 text-beach-text/90">
+            <div className="space-y-4 text-theme-gray">
               <p>
                 With over 15 years of experience as a dental hygienist, I have seen firsthand how certain oral habits can impact long-term development and overall quality of life. My passion for helping patients led me to explore the transformative benefits of myofunctional therapy. After extensive research and advanced training, I began offering myofunctional therapy services in 2021.
               </p>

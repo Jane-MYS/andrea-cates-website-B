@@ -12,7 +12,7 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeader 
           badge="My Services"
-          badgeColor="peach"
+          badgeColor="sage-green"
           title="Myofunctional Therapy"
           subtitle="Changing habits, one insightful session at a time."
         />
@@ -26,7 +26,7 @@ const ServicesSection = () => {
                   <AirVent className="h-6 w-6" />
                 </div>
                 <div>
-                  <h3 className="font-playfair text-2xl font-semibold mb-2">What Is Myofunctional Therapy?</h3>
+                  <h3 className="font-playfair text-2xl font-semibold mb-2 text-theme-vivid-red">What Is Myofunctional Therapy?</h3>
                   <p className="text-beach-text/90">
                     Myofunctional therapy is a specialized exercise program for the muscles of your face, mouth, tongue, and throat. It helps correct improper muscle habits, improve breathing, and support healthy swallowing, chewing, and speech. Think of it as physical therapy for your mouth and face.
                   </p>
@@ -52,7 +52,7 @@ const ServicesSection = () => {
               // Navigate using window.location for hash router
               window.location.hash = '#/packages';
             }}
-            className="inline-block bg-beach-blue hover:bg-beach-blue/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-xl"
+              className="inline-block bg-theme-vivid-red hover:bg-theme-vivid-red/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-xl"
           >
             See Packages & Pricing
           </button>

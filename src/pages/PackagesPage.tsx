@@ -57,7 +57,7 @@ const PackagesPage = () => {
             </span>
             <Sparkles className="w-8 h-8 ml-3" style={{ color: '#ff495c' }} />
           </div>
-          <h1 className="font-playfair text-4xl md:text-6xl font-semibold mb-6 leading-tight" style={{ color: '#000000' }}>
+          <h1 className="font-playfair text-4xl md:text-6xl font-semibold mb-6 leading-tight text-theme-vivid-red">
             Affordable, Personalized<br />
             <span style={{ color: '#ff495c' }}>Myofunctional Therapy</span>
           </h1>

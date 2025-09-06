@@ -9,7 +9,7 @@ const BenefitsCard = () => {
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl text-beach-blue bg-beach-blue/20">
           <Star className="h-10 w-10" />
         </div>
-        <h3 className="font-playfair text-2xl font-semibold ml-4">Key Benefits</h3>
+        <h3 className="font-playfair text-2xl font-semibold ml-4 text-theme-vivid-red">Key Benefits</h3>
       </div>
       
       <ul className="space-y-3">

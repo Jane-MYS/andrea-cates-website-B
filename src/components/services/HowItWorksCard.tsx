@@ -9,7 +9,7 @@ const HowItWorksCard = () => {
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-full text-beach-blue bg-beach-blue/20">
           <Stethoscope className="h-7 w-7" />
         </div>
-        <h3 className="font-playfair text-2xl font-semibold ml-4">How It Works</h3>
+        <h3 className="font-playfair text-2xl font-semibold ml-4 text-theme-vivid-red">How It Works</h3>
       </div>
       
       <div className="space-y-6">
