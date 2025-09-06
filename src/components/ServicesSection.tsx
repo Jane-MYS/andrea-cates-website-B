@@ -43,20 +43,19 @@ const ServicesSection = () => {
 
         {/* Packages & Pricing Section */}
         <div className="text-center mt-16">
-          <Link 
-            to="/packages"
+          <button
             onClick={() => {
-              // Force scroll to top when navigating
-              setTimeout(() => {
-                window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-                document.documentElement.scrollTop = 0;
-                document.body.scrollTop = 0;
-              }, 0);
+              // Force scroll to top and navigate
+              window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+              // Navigate using window.location for hash router
+              window.location.hash = '#/packages';
             }}
             className="inline-block bg-beach-blue hover:bg-beach-blue/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-200 hover:scale-105 hover:shadow-xl"
           >
             See Packages & Pricing
-          </Link>
+          </button>
           <p className="text-beach-text/80 mt-4 max-w-2xl mx-auto text-lg">
             Every journey is unique — our programs are designed to fit your needs and budget. Learn more about session options, pricing, and what's included in each package.
             

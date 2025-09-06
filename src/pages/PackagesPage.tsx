@@ -1,12 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Check, Clock, DollarSign, Heart, Target, Zap, Star, Sparkles, ArrowRight } from 'lucide-react';
 
 const PackagesPage = () => {
+  useLayoutEffect(() => {
+    // Scroll to top immediately before browser paints
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, []);
+
   useEffect(() => {
-    // Scroll to top when component mounts
+    // Additional scroll attempts after component mounts
     const scrollToTop = () => {
-      // Try multiple methods to ensure scrolling works
       window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
       document.documentElement.scrollTop = 0;
       document.body.scrollTop = 0;
@@ -18,13 +24,12 @@ const PackagesPage = () => {
       }
     };
     
-    // Immediate scroll
-    scrollToTop();
-    
     // Multiple delayed scrolls to ensure it works
+    setTimeout(scrollToTop, 0);
     setTimeout(scrollToTop, 50);
     setTimeout(scrollToTop, 100);
     setTimeout(scrollToTop, 200);
+    setTimeout(scrollToTop, 500);
   }, []);
 
   const handleEmailRedirect = () => {
@@ -32,7 +37,7 @@ const PackagesPage = () => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden" style={{ backgroundColor: '#faf3f3' }}>
+    <div className="min-h-screen relative overflow-hidden" style={{ backgroundColor: '#faf3f3', scrollBehavior: 'auto' }}>
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <div className="absolute top-20 left-10 w-32 h-32 rounded-full opacity-10" style={{ backgroundColor: '#ff495c' }}></div>
