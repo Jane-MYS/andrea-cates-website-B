@@ -24,6 +24,7 @@ export default {
 				serif: ["Marcellus", "serif"],
 				poppins: ['Poppins', 'sans-serif'],
 				handwriting: ['Dancing Script', 'cursive'], // Added handwriting font
+				'bd-sans': ['BD Sans', 'sans-serif'], // Added BD Sans font
 			},
 			colors: {
 				border: 'hsl(var(--border))',
