@@ -5,7 +5,17 @@ import { Check, Clock, DollarSign, Heart, Target, Zap, Star, Sparkles, ArrowRigh
 const PackagesPage = () => {
   useEffect(() => {
     // Scroll to top when component mounts
-    window.scrollTo(0, 0);
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    };
+    
+    // Immediate scroll
+    scrollToTop();
+    
+    // Also scroll after a small delay to ensure it works
+    setTimeout(scrollToTop, 100);
   }, []);
 
   const handleEmailRedirect = () => {
