@@ -15,8 +15,8 @@ const HeroSection = () => {
       {/* Background image with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
-        style={{ 
-          backgroundImage: "url('./photo-coverphoto-2-2.jpg')",
+        style={{
+          backgroundImage: "url('/andrea-cates-website-B/photo-coverphoto-2-2.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-theme-light-red/90 via-theme-beige/60 to-transparent"></div>

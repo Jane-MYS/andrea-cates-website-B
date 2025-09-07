@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/andrea-cates-personal-website/',
+  base: '/andrea-cates-website-B/',
 }));

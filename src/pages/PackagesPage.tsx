@@ -131,7 +131,7 @@ const PackagesPage = () => {
                     <div className="absolute -inset-4 bg-gradient-to-r from-theme-vivid-red/20 to-theme-rose/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
                     <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
                       <img 
-                        src="/andrea-cates-personal-website/Sleeping1-1.png" 
+                        src="/andrea-cates-website-B/Sleeping1-1.png" 
                         alt="Peaceful sleep and relaxation" 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
@@ -150,7 +150,7 @@ const PackagesPage = () => {
                   <div className="absolute -inset-4 bg-gradient-to-l from-theme-sage-green/20 to-theme-gold/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
                   <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
                     <img 
-                      src="/andrea-cates-personal-website/breathing-1-1.webp" 
+                      src="/andrea-cates-website-B/breathing-1-1.webp" 
                       alt="Breathing exercises and techniques" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -217,7 +217,7 @@ const PackagesPage = () => {
                     <div className="absolute -inset-4 bg-gradient-to-r from-theme-rose/20 to-theme-vivid-red/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
                     <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
                       <img 
-                        src="/andrea-cates-personal-website/zen-1.png" 
+                        src="/andrea-cates-website-B/zen-1.png" 
                         alt="Calming and relaxation techniques" 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
@@ -236,7 +236,7 @@ const PackagesPage = () => {
                   <div className="absolute -inset-4 bg-gradient-to-l from-theme-burgundy/20 to-theme-vivid-red/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
                   <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
                     <img 
-                      src="/andrea-cates-personal-website/breathing1-2.png" 
+                      src="/andrea-cates-website-B/breathing1-2.png" 
                       alt="Advanced breathing techniques" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
