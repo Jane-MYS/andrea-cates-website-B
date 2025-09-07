@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PackagesPage from "./pages/PackagesPage";
 
+// Test deployment - $(date)
+
 const queryClient = new QueryClient();
 
 const App = () => (
