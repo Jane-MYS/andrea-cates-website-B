@@ -2,11 +2,19 @@ import React from 'react';
 import { Waves } from 'lucide-react';
 
 const HeroSection = () => {
-  const scrollToServices = (e) => {
+  const scrollToServices = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const servicesSection = document.getElementById('services');
     if (servicesSection) {
       servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -44,6 +52,7 @@ const HeroSection = () => {
                 <div className="flex gap-4">
                   <a 
                     href="#contact" 
+                    onClick={scrollToContact}
                     className="bg-theme-vivid-red text-white px-10 py-4 rounded-full font-semibold shadow-lg flex items-center gap-3 text-lg transition-all duration-200 hover:bg-red-600 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-red-500/60"
                   >
                     <Waves size={24} />
@@ -95,6 +104,7 @@ const HeroSection = () => {
               <div className="flex flex-col gap-3 max-w-sm mx-auto">
                 <a 
                   href="#contact" 
+                  onClick={scrollToContact}
                   className="bg-theme-vivid-red text-white px-8 py-4 rounded-full font-semibold shadow-lg flex items-center justify-center gap-3 text-base transition-all duration-200 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500/60"
                 >
                   <Waves size={20} />

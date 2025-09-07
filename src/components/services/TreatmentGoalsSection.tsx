@@ -36,7 +36,7 @@ const TreatmentGoalsSection = () => {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-2" className="border-b border-beach-blue/20 mb-4">
+          <AccordionItem value="item-2" className="border-b border-theme-sage-green/20 mb-4">
             <AccordionTrigger className="hover:no-underline py-4 group">
               <div className="flex items-center gap-4">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#e8f8ff] text-[#62b5e5] shrink-0 transition-all duration-300 group-hover:bg-[#62b5e5] group-hover:text-white">
@@ -54,7 +54,7 @@ const TreatmentGoalsSection = () => {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-3" className="border-b border-beach-blue/20 mb-4">
+          <AccordionItem value="item-3" className="border-b border-theme-sage-green/20 mb-4">
             <AccordionTrigger className="hover:no-underline py-4 group">
               <div className="flex items-center gap-4">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#f0f8eb] text-[#7ab55a] shrink-0 transition-all duration-300 group-hover:bg-[#7ab55a] group-hover:text-white">
@@ -72,7 +72,7 @@ const TreatmentGoalsSection = () => {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-4" className="border-b border-beach-blue/20">
+          <AccordionItem value="item-4" className="border-b border-theme-sage-green/20">
             <AccordionTrigger className="hover:no-underline py-4 group">
               <div className="flex items-center gap-4">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#ffe5e5] text-beach-peach shrink-0 transition-all duration-300 group-hover:bg-beach-peach group-hover:text-white">
