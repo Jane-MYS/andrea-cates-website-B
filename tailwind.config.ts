@@ -45,6 +45,7 @@ export default {
 					'sage-green': '#9CAF88',   // Balance accent (icons, illustrations)
 					'gold': '#D4A373',         // Luxury touch (subtle details)
 					'card-pink': '#E4BDBD',    // Contact card background
+					'accent-beige': '#BCA88C', // New accent beige color
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
