@@ -10,13 +10,21 @@ const Navbar = () => {
     <nav className="bg-white border-b border-gray-100 shadow-sm py-4">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a href="#" className="flex items-center">
+          {/* Logo and Text */}
+          <a href="#" className="flex items-center space-x-4">
             <img 
-              src="lovable-uploads/logo.png" 
+              src="lovable-uploads/Andrea-Logo-New.jpeg" 
               alt="Andrea Cates - Myofunctional Therapist" 
-              className="h-[3.75rem] md:h-20"
+              className="h-[5.625rem] md:h-30"
             />
+            <div className="flex flex-col">
+              <h1 className="text-2xl md:text-3xl font-bold text-gray-800" style={{ fontFamily: 'Marcellus, serif' }}>
+                Andrea Cates
+              </h1>
+              <p className="text-sm md:text-base text-red-500" style={{ fontFamily: 'BD Sans, sans-serif' }}>
+                Myofunctional Therapist
+              </p>
+            </div>
           </a>
 
           {/* Mobile menu button */}
