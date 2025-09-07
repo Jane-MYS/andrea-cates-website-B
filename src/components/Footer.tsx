@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="text-center mb-12">
             {/* Logo and name */}
             <div className="flex items-center justify-center mb-6">
-              <Avatar className="h-10 w-10 mr-3">
+              <Avatar className="h-16 w-16 mr-3">
                 <AvatarImage src="/andrea-cates-website-B/lovable-uploads/Andrea-Logo-New_footer2.png" alt="Andrea Cates logo" />
               </Avatar>
               <span className="font-playfair text-3xl font-medium">Andrea Cates</span>
