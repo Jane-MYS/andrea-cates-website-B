@@ -430,3 +430,98 @@
     font-size: 1.4rem;
   }
 }
+
+/* Responsive Design Utilities */
+@media (max-width: 1023px) {
+  /* Tablet and mobile adjustments */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Base: mobile first - only apply to specific container classes */
+.responsive-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .responsive-container {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile-specific improvements */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Ensure buttons are touch-friendly */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improve text readability on mobile */
+  p, span {
+    line-height: 1.6;
+  }
+  
+  /* Prevent horizontal scroll */
+  * {
+    max-width: 100%;
+  }
+  
+  /* Mobile typography adjustments */
+  h1 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.3;
+  }
+  
+  h3 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.4;
+  }
+  
+  /* Mobile spacing adjustments */
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop full-width layout */
+  .responsive-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  /* Desktop typography */
+  h1 {
+    font-size: 3.75rem; /* 60px */
+    line-height: 1.1;
+  }
+  
+  h2 {
+    font-size: 2.5rem; /* 40px */
+    line-height: 1.2;
+  }
+  
+  h3 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 1.3;
+  }
+}

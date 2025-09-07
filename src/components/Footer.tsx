@@ -14,7 +14,7 @@ const Footer = () => {
             {/* Logo and name */}
             <div className="flex items-center justify-center mb-6">
               <Avatar className="h-10 w-10 mr-3">
-                <AvatarImage src="lovable-uploads/1322ee67-25ef-4976-91cd-d3b46a8b1191.png" alt="Andrea Cates logo" />
+                <AvatarImage src="/andrea-cates-website-B/lovable-uploads/1322ee67-25ef-4976-91cd-d3b46a8b1191.png" alt="Andrea Cates logo" />
               </Avatar>
               <span className="font-playfair text-3xl font-medium">Andrea Cates</span>
             </div>

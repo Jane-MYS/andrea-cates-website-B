@@ -15,7 +15,7 @@ const PhilosophySection = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-handwriting text-3xl mb-3 text-theme-vivid-red min-h-[2.5em] flex items-end">Early Intervention</h3>
+              <h3 className="font-handwriting text-3xl mb-3 text-theme-vivid-red min-h-[2.5em] flex items-center justify-center text-center">Early Intervention</h3>
               <p className="text-beach-text/80 min-h-[3.5em] flex items-start">Muscles help shape the face and jaw, keep the airway open, and support the teeth positioning</p>
             </div>
             
@@ -37,7 +37,7 @@ const PhilosophySection = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="font-handwriting text-3xl mb-3 text-theme-vivid-red min-h-[2.5em] flex items-end">Life-long Results</h3>
+              <h3 className="font-handwriting text-3xl mb-3 text-theme-vivid-red min-h-[2.5em] flex items-center justify-center text-center">Life-long Results</h3>
               <p className="text-beach-text/80 min-h-[3.5em] flex items-start">Uniquely addressing each individual's main problem to make lasting changes and prevent falling back into old habits</p>
             </div>
           </div>

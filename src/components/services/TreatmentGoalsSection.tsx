@@ -22,7 +22,7 @@ const TreatmentGoalsSection = () => {
             <AccordionTrigger className="hover:no-underline py-4 group">
               <div className="flex items-center gap-4">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-theme-sage-green/20 text-theme-sage-green shrink-0 transition-all duration-300 group-hover:bg-theme-sage-green group-hover:text-white">
-                  <img src="lovable-uploads/weather.png" alt="Nasal Breathing" className="h-7 w-7 object-contain" />
+                  <img src="/andrea-cates-website-B/lovable-uploads/weather.png" alt="Nasal Breathing" className="h-7 w-7 object-contain" />
                 </div>
                 <div className="text-left">
                   <h3 className="font-playfair text-xl md:text-2xl font-semibold text-theme-vivid-red">Nasal Breathing</h3>
@@ -40,7 +40,7 @@ const TreatmentGoalsSection = () => {
             <AccordionTrigger className="hover:no-underline py-4 group">
               <div className="flex items-center gap-4">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#e8f8ff] text-[#62b5e5] shrink-0 transition-all duration-300 group-hover:bg-[#62b5e5] group-hover:text-white">
-                  <img src="lovable-uploads/lips (1).png" alt="Lips" className="h-7 w-7 object-contain" />
+                  <img src="/andrea-cates-website-B/lovable-uploads/lips (1).png" alt="Lips" className="h-7 w-7 object-contain" />
                 </div>
                 <div className="text-left">
                   <h3 className="font-playfair text-xl md:text-2xl font-semibold text-theme-vivid-red">Proper Lip Seal</h3>
@@ -58,7 +58,7 @@ const TreatmentGoalsSection = () => {
             <AccordionTrigger className="hover:no-underline py-4 group">
               <div className="flex items-center gap-4">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#f0f8eb] text-[#7ab55a] shrink-0 transition-all duration-300 group-hover:bg-[#7ab55a] group-hover:text-white">
-                  <img src="lovable-uploads/tongue.png" alt="Tongue Posture" className="h-7 w-7 object-contain" />
+                  <img src="/andrea-cates-website-B/lovable-uploads/tongue.png" alt="Tongue Posture" className="h-7 w-7 object-contain" />
                 </div>
                 <div className="text-left">
                   <h3 className="font-playfair text-xl md:text-2xl font-semibold text-theme-vivid-red">Tongue Posture</h3>
@@ -76,7 +76,7 @@ const TreatmentGoalsSection = () => {
             <AccordionTrigger className="hover:no-underline py-4 group">
               <div className="flex items-center gap-4">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#ffe5e5] text-beach-peach shrink-0 transition-all duration-300 group-hover:bg-beach-peach group-hover:text-white">
-                  <img src="lovable-uploads/swallowing-pattern.png" alt="Swallowing Pattern" className="h-7 w-7 object-contain" />
+                  <img src="/andrea-cates-website-B/lovable-uploads/swallowing-pattern.png" alt="Swallowing Pattern" className="h-7 w-7 object-contain" />
                 </div>
                 <div className="text-left">
                   <h3 className="font-playfair text-xl md:text-2xl font-semibold text-theme-vivid-red">Swallowing Pattern</h3>
