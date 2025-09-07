@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PackagesPage from "./pages/PackagesPage";
 
-// Test deployment - $(date)
+// Test deployment - $(date) - Force update
 
 const queryClient = new QueryClient();
 
