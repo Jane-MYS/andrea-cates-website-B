@@ -50,23 +50,28 @@ const PackagesPage = () => {
         
         {/* Headline Section */}
         <div className="text-center mb-20 relative">
-          <div className="inline-flex items-center justify-center mb-6">
-            <Sparkles className="w-8 h-8 mr-3 text-theme-vivid-red" />
-            <span className="text-lg font-medium px-4 py-2 rounded-full bg-theme-vivid-red text-white">
-              Transform Your Life Today
-            </span>
-            <Sparkles className="w-8 h-8 ml-3 text-theme-vivid-red" />
-          </div>
-          <h1 className="font-playfair text-4xl md:text-6xl font-semibold mb-6 leading-tight text-theme-vivid-red" style={{ color: '#FF495C' }}>
-            Affordable, Personalized<br />
-            <span className="text-theme-vivid-red" style={{ color: '#FF495C' }}>Myofunctional Therapy</span>
-          </h1>
+          {/* Logo and Name */}
           <div className="flex items-center justify-center mb-8">
-            <Star className="w-6 h-6 mr-2 text-theme-vivid-red" />
+            <img 
+              src="/andrea-cates-website-B/lovable-uploads/Andrea-Logo-New.jpeg" 
+              alt="Andrea Cates - Myofunctional Therapist" 
+              className="h-20 mr-6"
+            />
+            <div className="flex flex-col text-left">
+              <h1 className="text-3xl font-bold text-gray-800" style={{ fontFamily: 'Marcellus, serif' }}>
+                Andrea Cates
+              </h1>
+              <p className="text-base text-red-500" style={{ fontFamily: 'BD Sans, sans-serif' }}>
+                Myofunctional Therapist
+              </p>
+            </div>
+          </div>
+          
+          {/* New Tagline */}
+          <div className="flex items-center justify-center mb-8">
             <p className="text-2xl md:text-3xl font-medium text-theme-vivid-red">
-              See results in as little as 2–3 months
+              Easy, manageable and customize for every single individual
             </p>
-            <Star className="w-6 h-6 ml-2 text-theme-vivid-red" />
           </div>
         </div>
 
@@ -80,11 +85,9 @@ const PackagesPage = () => {
           {/* Header */}
           <div className="relative z-10 text-center mb-16">
             <div className="inline-flex items-center justify-center mb-6">
-              <Sparkles className="w-8 h-8 mr-3 text-theme-vivid-red" />
               <h2 className="font-playfair text-4xl md:text-5xl font-bold text-theme-black">
                 What's Included in Your Journey
               </h2>
-              <Sparkles className="w-8 h-8 ml-3 text-theme-vivid-red" />
             </div>
             <p className="text-xl text-theme-gray max-w-3xl mx-auto">
               A comprehensive approach to transforming your breathing, sleep, and overall well-being
@@ -286,11 +289,9 @@ const PackagesPage = () => {
           {/* Header */}
           <div className="relative z-10 text-center mb-16">
             <div className="inline-flex items-center justify-center mb-6">
-              <Zap className="w-8 h-8 mr-3 text-theme-vivid-red" />
               <h2 className="font-playfair text-4xl md:text-5xl font-bold text-theme-black">
                 Your Journey Timeline
               </h2>
-              <Zap className="w-8 h-8 ml-3 text-theme-vivid-red" />
             </div>
             <p className="text-xl text-theme-gray max-w-3xl mx-auto">
               See the progression of your transformation with clear milestones and expected outcomes
