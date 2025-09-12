@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Check, Clock, DollarSign, Heart, Target, Zap, Star, Sparkles, ArrowRight } from 'lucide-react';
+import { Check, Clock, DollarSign, Heart, Target, Zap, Star, Sparkles, ArrowRight, ArrowLeft, Home } from 'lucide-react';
+import Footer from '@/components/Footer';
 
 const PackagesPage = () => {
   useLayoutEffect(() => {
@@ -38,6 +39,39 @@ const PackagesPage = () => {
 
   return (
     <div className="min-h-screen relative overflow-hidden bg-theme-light-red" style={{ scrollBehavior: 'auto', backgroundColor: '#FAF3F3' }}>
+      {/* Header Navigation */}
+      <div className="bg-white border-b border-gray-100 shadow-sm relative z-20">
+        <div className="container mx-auto px-4 md:px-6 py-4">
+          <div className="flex items-center justify-between">
+            {/* Logo and Name */}
+            <Link to="/" className="flex items-center space-x-4">
+              <img 
+                src="/andrea-cates-website-B/lovable-uploads/Andrea-Logo-New.jpeg" 
+                alt="Andrea Cates - Myofunctional Therapist" 
+                className="h-12"
+              />
+              <div className="flex flex-col">
+                <h1 className="text-xl font-bold text-gray-800" style={{ fontFamily: 'Marcellus, serif' }}>
+                  Andrea Cates
+                </h1>
+                <p className="text-sm text-red-500" style={{ fontFamily: 'BD Sans, sans-serif' }}>
+                  Myofunctional Therapist
+                </p>
+              </div>
+            </Link>
+
+            {/* Back to Home Button */}
+            <Link 
+              to="/" 
+              className="flex items-center space-x-2 px-4 py-2 rounded-full bg-theme-vivid-red text-white hover:bg-red-600 transition-colors"
+            >
+              <Home className="w-4 h-4" />
+              <span className="text-sm font-medium">Back to Home</span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <div className="absolute top-20 left-10 w-32 h-32 rounded-full opacity-10 bg-theme-vivid-red"></div>
@@ -48,30 +82,33 @@ const PackagesPage = () => {
 
       <div className="container mx-auto px-4 md:px-6 py-16 relative z-10">
         
-        {/* Headline Section */}
-        <div className="text-center mb-20 relative">
-          {/* Logo and Name */}
-          <div className="flex items-center justify-center mb-8">
+        {/* Hero Section with Background Image */}
+        <div className="relative mb-20 -mx-4 md:-mx-6">
+          <div className="relative h-[60vh] md:h-[70vh] overflow-hidden">
+            {/* Background Image */}
             <img 
-              src="/andrea-cates-website-B/lovable-uploads/Andrea-Logo-New.jpeg" 
-              alt="Andrea Cates - Myofunctional Therapist" 
-              className="h-20 mr-6"
+              src="/andrea-cates-website-B/lovable-uploads/Packagepage-image-hero.jpg" 
+              alt="Andrea Cates Myofunctional Therapy" 
+              className="w-full h-full object-cover"
             />
-            <div className="flex flex-col text-left">
-              <h1 className="text-3xl font-bold text-gray-800" style={{ fontFamily: 'Marcellus, serif' }}>
-                Andrea Cates
-              </h1>
-              <p className="text-base text-red-500" style={{ fontFamily: 'BD Sans, sans-serif' }}>
-                Myofunctional Therapist
-              </p>
+            
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-black/40"></div>
+            
+            {/* Text Overlay */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center text-white px-4 md:px-8 max-w-4xl mx-auto">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6" style={{ fontFamily: 'Marcellus, serif' }}>
+                  Andrea Cates
+                </h1>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-8 text-red-200" style={{ fontFamily: 'BD Sans, sans-serif' }}>
+                  Myofunctional therapy in South Bay
+                </h2>
+                <p className="text-xl md:text-2xl lg:text-3xl font-medium text-white leading-relaxed">
+                  Easy, manageable and customize for every single individual
+                </p>
+              </div>
             </div>
-          </div>
-          
-          {/* New Tagline */}
-          <div className="flex items-center justify-center mb-8">
-            <p className="text-2xl md:text-3xl font-medium text-theme-vivid-red">
-              Easy, manageable and customize for every single individual
-            </p>
           </div>
         </div>
 
@@ -481,6 +518,9 @@ const PackagesPage = () => {
         </div>
 
       </div>
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
