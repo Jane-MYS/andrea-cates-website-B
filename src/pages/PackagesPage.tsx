@@ -82,31 +82,47 @@ const PackagesPage = () => {
 
       <div className="container mx-auto px-4 md:px-6 py-16 relative z-10">
         
-        {/* Hero Section with Background Image */}
-        <div className="relative mb-20 -mx-4 md:-mx-6">
-          <div className="relative h-[60vh] md:h-[70vh] overflow-hidden">
-            {/* Background Image */}
-            <img 
-              src="/andrea-cates-website-B/lovable-uploads/Packagepage-image-hero.jpg" 
-              alt="Andrea Cates Myofunctional Therapy" 
-              className="w-full h-full object-cover"
-            />
+        {/* Hero Section - Split Layout */}
+        <div className="relative mb-20 pt-16">
+          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[60vh]">
+            {/* Left Side - Text Content */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6" style={{ fontFamily: 'Marcellus, serif' }}>
+                Andrea Cates
+              </h1>
+              <h2 className="text-2xl md:text-3xl font-medium text-red-500 mb-8" style={{ fontFamily: 'BD Sans, sans-serif' }}>
+                Myofunctional therapy in South Bay
+              </h2>
+              <p className="text-xl md:text-2xl font-medium text-theme-vivid-red mb-8 leading-relaxed">
+                Easy, manageable and customize for every single individual
+              </p>
+              
+              {/* Call-to-Action Button */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <button
+                  onClick={handleEmailRedirect}
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-vivid-red text-white hover:bg-red-600"
+                >
+                  <span>Book Your Free Consultation</span>
+                  <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+                </button>
+                
+                <div className="flex items-center justify-center lg:justify-start text-lg text-theme-gray">
+                  <span>No commitment required</span>
+                </div>
+              </div>
+            </div>
             
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/40"></div>
-            
-            {/* Text Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white px-4 md:px-8 max-w-4xl mx-auto">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6" style={{ fontFamily: 'Marcellus, serif' }}>
-                  Andrea Cates
-                </h1>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-8 text-red-200" style={{ fontFamily: 'BD Sans, sans-serif' }}>
-                  Myofunctional therapy in South Bay
-                </h2>
-                <p className="text-xl md:text-2xl lg:text-3xl font-medium text-white leading-relaxed">
-                  Easy, manageable and customize for every single individual
-                </p>
+            {/* Right Side - Hero Image */}
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-theme-vivid-red/20 to-theme-rose/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
+              <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
+                <img 
+                  src="/andrea-cates-website-B/lovable-uploads/Packagepage-image-hero.jpg" 
+                  alt="Andrea Cates Myofunctional Therapy" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
             </div>
           </div>
@@ -123,56 +139,44 @@ const PackagesPage = () => {
           <div className="relative z-10 text-center mb-16">
             <div className="inline-flex items-center justify-center mb-6">
               <h2 className="font-playfair text-4xl md:text-5xl font-bold text-theme-black">
-                What's Included in Your Journey
+                Myofunctional Therapy Is Broken Down In Three Phases
               </h2>
             </div>
             <p className="text-xl text-theme-gray max-w-3xl mx-auto">
-              A comprehensive approach to transforming your breathing, sleep, and overall well-being
+              A structured approach to building lasting habits and skills for optimal health
             </p>
           </div>
 
-          {/* Flowing Content Sections */}
-          <div className="relative z-10 space-y-24">
+          {/* Three Phases Content */}
+          <div className="relative z-10 space-y-16">
             
-            {/* Section 1: Sleep Optimization */}
+            {/* Phase I: Intensive Phase */}
             <div className="relative">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Content */}
                 <div className="order-2 lg:order-1">
                   <div className="flex items-center mb-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-theme-vivid-red to-theme-rose rounded-2xl flex items-center justify-center mr-6">
-                      <Check className="w-8 h-8 text-white" />
+                      <span className="text-white font-bold text-xl">I</span>
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-bold text-theme-black">Sleep Optimization</h3>
+                    <div>
+                      <h3 className="text-3xl md:text-4xl font-bold text-theme-black">Intensive Phase I</h3>
+                      <p className="text-lg text-theme-vivid-red font-semibold">(Meet every 2 weeks)</p>
+                    </div>
                   </div>
                   <p className="text-lg text-theme-gray mb-8 leading-relaxed">
-                    Transform your sleep quality through proper breathing techniques and posture correction. 
-                    Experience deeper, more restorative sleep that energizes your entire day.
+                    The purpose is to gain muscle control and coordination, nasal breathing, proper tongue and lip resting posture, proper body posture, swallowing mechanics and habit elimination. These are the "tools" you will need in your toolbox to practice good habits for a lifetime.
                   </p>
-                  <div className="space-y-4">
-                    <div className="flex items-center group">
-                      <div className="w-2 h-2 bg-theme-vivid-red rounded-full mr-4 group-hover:scale-125 transition-transform"></div>
-                      <span className="text-theme-gray group-hover:text-theme-black transition-colors">Improved airway positioning</span>
-                    </div>
-                    <div className="flex items-center group">
-                      <div className="w-2 h-2 bg-theme-vivid-red rounded-full mr-4 group-hover:scale-125 transition-transform"></div>
-                      <span className="text-theme-gray group-hover:text-theme-black transition-colors">Reduced snoring and sleep apnea</span>
-                    </div>
-                    <div className="flex items-center group">
-                      <div className="w-2 h-2 bg-theme-vivid-red rounded-full mr-4 group-hover:scale-125 transition-transform"></div>
-                      <span className="text-theme-gray group-hover:text-theme-black transition-colors">Enhanced sleep quality</span>
-                    </div>
-                  </div>
                 </div>
                 
-                {/* Sleep Optimization Image */}
+                {/* Phase I Image */}
                 <div className="order-1 lg:order-2">
                   <div className="relative group">
                     <div className="absolute -inset-4 bg-gradient-to-r from-theme-vivid-red/20 to-theme-rose/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
                     <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
                       <img 
-                        src="/andrea-cates-website-B/Sleeping1-1.png" 
-                        alt="Peaceful sleep and relaxation" 
+                        src="/andrea-cates-website-B/lovable-uploads/Picture1.jpg" 
+                        alt="Intensive Phase I - Building Foundation" 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -182,18 +186,18 @@ const PackagesPage = () => {
               </div>
             </div>
 
-            {/* Section 2: Breathing Training */}
+            {/* Phase II: Habituation Phase */}
             <div className="relative">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
-                {/* Breathing Training Image */}
+                {/* Phase II Image */}
                 <div className="relative group">
                   <div className="absolute -inset-4 bg-gradient-to-l from-theme-sage-green/20 to-theme-gold/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
                   <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
-                    <img 
-                      src="/andrea-cates-website-B/breathing-1-1.webp" 
-                      alt="Breathing exercises and techniques" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
+                      <img 
+                        src="/andrea-cates-website-B/lovable-uploads/Picture2.jpg" 
+                        alt="Habituation Phase II - Building Habits" 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   </div>
                 </div>
@@ -202,112 +206,50 @@ const PackagesPage = () => {
                 <div>
                   <div className="flex items-center mb-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-theme-sage-green to-theme-gold rounded-2xl flex items-center justify-center mr-6">
-                      <Check className="w-8 h-8 text-white" />
+                      <span className="text-white font-bold text-xl">II</span>
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-bold text-theme-black">Breathing Training</h3>
+                    <div>
+                      <h3 className="text-3xl md:text-4xl font-bold text-theme-black">Habituation Phase II</h3>
+                      <p className="text-lg text-theme-sage-green font-semibold">(Meet every 2-3 weeks)</p>
+                    </div>
                   </div>
                   <p className="text-lg text-theme-gray mb-8 leading-relaxed">
-                    Master proper breathing techniques that support your overall health and well-being. 
-                    Transform your daily life through conscious, effective breathing.
+                    Advance the habits learned in Phase I and begin to apply them consistently to properly and effectively chew, drink and swallow as well as maintaining the proper tongue and lip resting postures, proper breathing and proper body posture for longer time periods.
                   </p>
-                  <div className="space-y-4">
-                    <div className="flex items-center group">
-                      <div className="w-2 h-2 bg-theme-sage-green rounded-full mr-4 group-hover:scale-125 transition-transform"></div>
-                      <span className="text-theme-gray group-hover:text-theme-black transition-colors">Diaphragmatic breathing</span>
-                    </div>
-                    <div className="flex items-center group">
-                      <div className="w-2 h-2 bg-theme-sage-green rounded-full mr-4 group-hover:scale-125 transition-transform"></div>
-                      <span className="text-theme-gray group-hover:text-theme-black transition-colors">Nasal breathing techniques</span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Section 3: Calming Techniques */}
+            {/* Phase III: Retention Phase */}
             <div className="relative">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Content */}
                 <div className="order-2 lg:order-1">
                   <div className="flex items-center mb-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-theme-rose to-theme-vivid-red rounded-2xl flex items-center justify-center mr-6">
-                      <Check className="w-8 h-8 text-white" />
+                      <span className="text-white font-bold text-xl">III</span>
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-bold text-theme-black">Calming Techniques</h3>
+                    <div>
+                      <h3 className="text-3xl md:text-4xl font-bold text-theme-black">Retention Phase III</h3>
+                      <p className="text-lg text-theme-rose font-semibold">(Meet every 4-5 weeks)</p>
+                    </div>
                   </div>
                   <p className="text-lg text-theme-gray mb-8 leading-relaxed">
-                    Learn relaxation methods that reduce stress and promote healing throughout your journey. 
-                    Discover the power of mindful calm in your daily life.
+                    Continued habituation of skills learned in Phases I & II and integration of these habits and skills into your lifestyle.
                   </p>
-                  <div className="space-y-4">
-                    <div className="flex items-center group">
-                      <div className="w-2 h-2 bg-theme-rose rounded-full mr-4 group-hover:scale-125 transition-transform"></div>
-                      <span className="text-theme-gray group-hover:text-theme-black transition-colors">Stress reduction methods</span>
-                    </div>
-                    <div className="flex items-center group">
-                      <div className="w-2 h-2 bg-theme-rose rounded-full mr-4 group-hover:scale-125 transition-transform"></div>
-                      <span className="text-theme-gray group-hover:text-theme-black transition-colors">Mindfulness practices</span>
-                    </div>
-                  </div>
                 </div>
                 
-                {/* Calming Techniques Image */}
+                {/* Phase III Image */}
                 <div className="order-1 lg:order-2">
                   <div className="relative group">
                     <div className="absolute -inset-4 bg-gradient-to-r from-theme-rose/20 to-theme-vivid-red/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
                     <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
                       <img 
-                        src="/andrea-cates-website-B/zen-1.png" 
-                        alt="Calming and relaxation techniques" 
+                        src="/andrea-cates-website-B/lovable-uploads/Picture3.jpg" 
+                        alt="Retention Phase III - Lifestyle Integration" 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Section 4: Advanced Breathing */}
-            <div className="relative">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                {/* Advanced Breathing Image */}
-                <div className="relative group">
-                  <div className="absolute -inset-4 bg-gradient-to-l from-theme-burgundy/20 to-theme-vivid-red/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
-                  <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
-                    <img 
-                      src="/andrea-cates-website-B/breathing1-2.png" 
-                      alt="Advanced breathing techniques" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  </div>
-                </div>
-                
-                {/* Content */}
-                <div>
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-theme-burgundy to-theme-vivid-red rounded-2xl flex items-center justify-center mr-6">
-                      <Check className="w-8 h-8 text-white" />
-                    </div>
-                    <h3 className="text-3xl md:text-4xl font-bold text-theme-black">Advanced Breathing</h3>
-                  </div>
-                  <p className="text-lg text-theme-gray mb-8 leading-relaxed">
-                    Master advanced breathing techniques that enhance your therapy results and improve your daily life. 
-                    Take your practice to the next level.
-                  </p>
-                  <div className="space-y-4">
-                    <div className="flex items-center group">
-                      <div className="w-2 h-2 bg-theme-burgundy rounded-full mr-4 group-hover:scale-125 transition-transform"></div>
-                      <span className="text-theme-gray group-hover:text-theme-black transition-colors">Respiratory muscle strengthening</span>
-                    </div>
-                    <div className="flex items-center group">
-                      <div className="w-2 h-2 bg-theme-burgundy rounded-full mr-4 group-hover:scale-125 transition-transform"></div>
-                      <span className="text-theme-gray group-hover:text-theme-black transition-colors">Airway optimization techniques</span>
-                    </div>
-                    <div className="flex items-center group">
-                      <div className="w-2 h-2 bg-theme-burgundy rounded-full mr-4 group-hover:scale-125 transition-transform"></div>
-                      <span className="text-theme-gray group-hover:text-theme-black transition-colors">Habit elimination strategies</span>
                     </div>
                   </div>
                 </div>
