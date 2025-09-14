@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Avatar, AvatarImage } from '@/components/ui/avatar';
 import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -33,6 +34,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-8">
               <ScrollLink to="about" smooth={true} duration={500} offset={-80} className="nav-link text-base font-medium text-gray-800 hover:text-red-500 cursor-pointer transition-colors">About</ScrollLink>
               <ScrollLink to="services" smooth={true} duration={500} offset={-80} className="nav-link text-base font-medium text-gray-800 hover:text-red-500 cursor-pointer transition-colors">Services</ScrollLink>
+              <Link to="/packages" className="nav-link text-base font-medium text-gray-800 hover:text-red-500 cursor-pointer transition-colors">Pricing</Link>
               <ScrollLink 
                 to="contact" 
                 smooth={true} 
@@ -107,6 +109,13 @@ const Navbar = () => {
               >
                 Services
               </ScrollLink>
+              <Link 
+                to="/packages" 
+                className="block py-3 text-lg font-medium text-gray-800 hover:text-red-500 cursor-pointer transition-colors" 
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Pricing
+              </Link>
               <ScrollLink 
                 to="contact" 
                 smooth={true} 

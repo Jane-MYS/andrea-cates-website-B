@@ -5,7 +5,8 @@ const HeroSection = () => {
   const scrollToServices = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const servicesSection = document.getElementById('services');
-    if (servicesSection) {
+    if (servicesSection) 
+      {
       servicesSection.scrollIntoView({ behavior: 'smooth' });
     }
   };

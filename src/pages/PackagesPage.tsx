@@ -82,7 +82,7 @@ const PackagesPage = () => {
       </div>
 
       {/* Hero Section - Full Width Background Image Layout */}
-      <div className="relative mb-20 min-h-[70vh] flex items-center justify-center">
+      <div className="relative mb-4 md:mb-6 min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
@@ -90,12 +90,12 @@ const PackagesPage = () => {
             alt="Andrea Cates Myofunctional Therapy" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30 md:from-black/60 md:via-black/30 md:to-black/20"></div>
         </div>
         
         {/* Text Content Overlay */}
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <p className="text-2xl md:text-4xl font-medium text-white mb-8 leading-relaxed">
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-6 md:px-4">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-medium text-white mb-6 md:mb-8 leading-relaxed">
             Easy, manageable and customize for every single individual
           </p>
           
@@ -103,10 +103,10 @@ const PackagesPage = () => {
           <div className="flex justify-center">
             <button
               onClick={handleEmailRedirect}
-              className="inline-flex items-center justify-center px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-vivid-red text-white hover:bg-red-600"
+              className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-vivid-red text-white hover:bg-red-600"
             >
               <span>Book Your Free Consultation</span>
-              <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-4 h-4 md:w-5 md:h-5 ml-2 md:ml-3 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
         </div>
@@ -124,33 +124,33 @@ const PackagesPage = () => {
           {/* Header */}
           <div className="relative z-10 text-center mb-16">
             <div className="inline-flex items-center justify-center mb-6">
-              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-theme-black">
+              <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-theme-vivid-red leading-tight">
                 Myofunctional Therapy Is Broken Down In Three Phases
               </h2>
             </div>
-            <p className="text-xl text-theme-gray max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-theme-gray max-w-3xl mx-auto px-4">
               A structured approach to building lasting habits and skills for optimal health
             </p>
           </div>
 
           {/* Three Phases Content */}
-          <div className="relative z-10 space-y-16">
+          <div className="relative z-10 space-y-12 md:space-y-16">
             
             {/* Phase I: Intensive Phase */}
             <div className="relative">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
                 {/* Content */}
                 <div className="order-2 lg:order-1">
                   <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-theme-vivid-red to-theme-rose rounded-2xl flex items-center justify-center mr-6">
-                      <span className="text-white font-bold text-xl">I</span>
+                    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-theme-vivid-red to-theme-rose rounded-2xl flex items-center justify-center mr-4 md:mr-6">
+                      <span className="text-white font-bold text-lg md:text-xl">I</span>
                     </div>
                     <div>
-                      <h3 className="text-3xl md:text-4xl font-bold text-theme-black">Intensive Phase I</h3>
-                      <p className="text-lg text-theme-vivid-red font-semibold">(Meet every 2 weeks)</p>
+                      <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-theme-black">Intensive Phase I</h3>
+                      <p className="text-base md:text-lg text-theme-vivid-red font-semibold">(Meet every 2 weeks)</p>
                     </div>
                   </div>
-                  <p className="text-lg text-theme-gray mb-8 leading-relaxed">
+                  <p className="text-base md:text-lg text-theme-gray mb-6 md:mb-8 leading-relaxed">
                     The purpose is to gain muscle control and coordination, nasal breathing, proper tongue and lip resting posture, proper body posture, swallowing mechanics and habit elimination. These are the "tools" you will need in your toolbox to practice good habits for a lifetime.
                   </p>
                 </div>
@@ -254,40 +254,40 @@ const PackagesPage = () => {
           {/* Header */}
           <div className="relative z-10 text-center mb-16">
             <div className="inline-flex items-center justify-center mb-6">
-              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-theme-black">
+              <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-theme-vivid-red leading-tight">
                 Pricing & Services
               </h2>
             </div>
-            <p className="text-xl text-theme-gray max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-theme-gray max-w-3xl mx-auto px-4">
               Choose the service that's right for you and start your journey to better health
             </p>
           </div>
 
           {/* Pricing Cards Grid */}
           <div className="relative z-10 max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 items-stretch">
+            <div className="grid md:grid-cols-3 gap-6 md:gap-8 items-stretch">
               
               {/* Card 1: Complimentary Consultation */}
               <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-theme-sage-green/20 hover:border-theme-sage-green overflow-hidden flex flex-col">
                 {/* Card Header */}
-                <div className="relative p-8 pb-6">
-                  <div className="absolute top-6 right-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-theme-sage-green to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
-                      <Check className="w-8 h-8 text-white" />
+                <div className="relative p-6 md:p-8 pb-4 md:pb-6">
+                  <div className="absolute top-4 right-4 md:top-6 md:right-6">
+                    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-theme-sage-green to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Check className="w-6 h-6 md:w-8 md:h-8 text-white" />
                     </div>
                   </div>
-                  <div className="pr-20">
-                    <h3 className="font-playfair text-2xl font-bold text-theme-black mb-2">Complimentary Consultation</h3>
-                    <div className="text-4xl font-bold text-theme-sage-green mb-4">FREE</div>
-                    <p className="text-theme-gray text-lg leading-relaxed">
+                  <div className="pr-16 md:pr-20">
+                    <h3 className="font-playfair text-xl md:text-2xl font-bold text-theme-black mb-2">Complimentary Consultation</h3>
+                    <div className="text-3xl md:text-4xl font-bold text-theme-sage-green mb-3 md:mb-4">FREE</div>
+                    <p className="text-theme-gray text-base md:text-lg leading-relaxed">
                       Curious if myofunctional therapy is right for you or your child? Book a 15-minute consultation.
                     </p>
                   </div>
                 </div>
                 
                 {/* Card Body */}
-                <div className="px-8 pb-8 flex-grow flex flex-col">
-                  <div className="space-y-4 mb-8 flex-grow">
+                <div className="px-6 md:px-8 pb-6 md:pb-8 flex-grow flex flex-col">
+                  <div className="space-y-3 md:space-y-4 mb-6 md:mb-8 flex-grow">
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-theme-sage-green rounded-full mr-4"></div>
                       <span className="text-theme-gray">See if therapy is the right fit</span>
@@ -307,7 +307,7 @@ const PackagesPage = () => {
                     className="w-full inline-flex items-center justify-center px-6 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-sage-green text-white hover:bg-green-600"
                   >
                     <span>Schedule Free Consultation</span>
-                    <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 ml-2 md:ml-3 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
                 
@@ -334,8 +334,8 @@ const PackagesPage = () => {
                 </div>
                 
                 {/* Card Body */}
-                <div className="px-8 pb-8 flex-grow flex flex-col">
-                  <div className="space-y-4 mb-8 flex-grow">
+                <div className="px-6 md:px-8 pb-6 md:pb-8 flex-grow flex flex-col">
+                  <div className="space-y-3 md:space-y-4 mb-6 md:mb-8 flex-grow">
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-theme-vivid-red rounded-full mr-4"></div>
                       <span className="text-theme-gray">A comprehensive intake form</span>
@@ -356,7 +356,7 @@ const PackagesPage = () => {
                     style={{ backgroundColor: '#ff4d6d' }}
                   >
                     <span>Schedule Exam</span>
-                    <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 ml-2 md:ml-3 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
                 
@@ -383,8 +383,8 @@ const PackagesPage = () => {
                 </div>
                 
                 {/* Card Body */}
-                <div className="px-8 pb-8 flex-grow flex flex-col">
-                  <div className="space-y-4 mb-8 flex-grow">
+                <div className="px-6 md:px-8 pb-6 md:pb-8 flex-grow flex flex-col">
+                  <div className="space-y-3 md:space-y-4 mb-6 md:mb-8 flex-grow">
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-theme-rose rounded-full mr-4"></div>
                       <span className="text-theme-gray">Pricing varies based on your goals and treatment length</span>
@@ -404,7 +404,7 @@ const PackagesPage = () => {
                     className="w-full inline-flex items-center justify-center px-6 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-vivid-red text-white hover:bg-red-600"
                   >
                     <span>Schedule Session</span>
-                    <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 ml-2 md:ml-3 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
                 
@@ -426,11 +426,11 @@ const PackagesPage = () => {
           {/* Header */}
           <div className="relative z-10 text-center mb-16">
             <div className="inline-flex items-center justify-center mb-6">
-              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-theme-vivid-red">
+              <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-theme-vivid-red leading-tight">
                 Frequently Asked Questions
               </h2>
             </div>
-            <p className="text-xl text-theme-gray max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-theme-gray max-w-3xl mx-auto px-4">
               Get answers to common questions about myofunctional therapy
             </p>
           </div>
@@ -439,19 +439,19 @@ const PackagesPage = () => {
           <div className="relative z-10 max-w-4xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="online-program" className="border-b border-theme-sage-green/20 mb-4">
-                <AccordionTrigger className="hover:no-underline py-6 group">
-                  <div className="flex items-center gap-4">
-                    <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-theme-sage-green/20 text-theme-sage-green shrink-0 transition-all duration-300 group-hover:bg-theme-sage-green group-hover:text-white">
-                      <Check className="w-7 h-7" />
+                <AccordionTrigger className="hover:no-underline py-4 md:py-6 group">
+                  <div className="flex items-center gap-3 md:gap-4">
+                    <div className="inline-flex items-center justify-center w-10 h-10 md:w-14 md:h-14 rounded-full bg-theme-sage-green/20 text-theme-sage-green shrink-0 transition-all duration-300 group-hover:bg-theme-sage-green group-hover:text-white">
+                      <Check className="w-5 h-5 md:w-7 md:h-7" />
                     </div>
                     <div className="text-left">
-                      <h3 className="font-playfair text-xl md:text-2xl font-semibold text-theme-vivid-red">Can I just buy an online program to save money?</h3>
+                      <h3 className="font-playfair text-lg md:text-xl lg:text-2xl font-semibold text-theme-vivid-red leading-tight">Can I just buy an online program to save money?</h3>
                     </div>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-20">
+                <AccordionContent className="pl-14 md:pl-20">
                   <div className="pb-6">
-                    <div className="space-y-6 text-lg text-theme-gray leading-relaxed">
+                    <div className="space-y-4 md:space-y-6 text-base md:text-lg text-theme-gray leading-relaxed">
                       <p>
                         Buying a one-size-fits-all online program is not recommended and carries a higher risk of failure than a custom program. A personalized plan from a certified therapist, delivered in-person or via telehealth, is considered the most effective approach for achieving lasting results.
                       </p>
@@ -469,42 +469,42 @@ const PackagesPage = () => {
           </div>
         </div>
 
-        {/* Footer-Style Call to Action */}
-        <div className="relative bg-theme-beige py-20 overflow-hidden">
-          {/* Background decorative elements */}
-          <div className="absolute inset-0">
-            <div className="absolute top-10 left-10 w-32 h-32 bg-theme-sage-green/10 rounded-full blur-2xl"></div>
-            <div className="absolute bottom-10 right-10 w-40 h-40 bg-theme-gold/10 rounded-full blur-2xl"></div>
-            <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-theme-rose/10 rounded-full blur-xl"></div>
-            <div className="absolute bottom-1/4 right-1/3 w-28 h-28 bg-theme-vivid-red/10 rounded-full blur-xl"></div>
+      </div>
+
+      {/* Footer-Style Call to Action - Full Width */}
+      <div className="relative bg-theme-beige py-20 overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-theme-sage-green/10 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 right-10 w-40 h-40 bg-theme-gold/10 rounded-full blur-2xl"></div>
+          <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-theme-rose/10 rounded-full blur-xl"></div>
+          <div className="absolute bottom-1/4 right-1/3 w-28 h-28 bg-theme-vivid-red/10 rounded-full blur-xl"></div>
+        </div>
+        
+        {/* Main Content */}
+        <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center">
+          <div className="text-center mb-6">
+            <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-theme-vivid-red leading-tight">
+              Ready to Transform Your Life?
+            </h2>
           </div>
           
-          {/* Main Content */}
-          <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center">
-            <div className="text-center mb-6">
-              <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-theme-black leading-tight whitespace-nowrap">
-                Ready to Transform Your Life?
-              </h2>
-            </div>
+          <p className="text-lg md:text-xl lg:text-2xl text-theme-gray mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto px-4">
+            Start your journey to better health, improved sleep, and renewed confidence. 
+            Take the first step towards a life-changing transformation.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button
+              onClick={handleEmailRedirect}
+              className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-vivid-red text-white hover:bg-theme-rose"
+            >
+              <span>Book Your Free Consultation</span>
+              <ArrowRight className="w-4 h-4 md:w-5 md:h-5 ml-2 md:ml-3 group-hover:translate-x-1 transition-transform" />
+            </button>
             
-            <p className="text-xl md:text-2xl text-theme-gray mb-8 leading-relaxed max-w-3xl mx-auto">
-              Start your journey to better health, improved sleep, and renewed confidence. 
-              Take the first step towards a life-changing transformation.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button
-                onClick={handleEmailRedirect}
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-vivid-red text-white hover:bg-theme-rose"
-              >
-                <span>Book Your Free Consultation</span>
-                <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
-              </button>
-              
-            </div>
           </div>
         </div>
-
       </div>
       
       {/* Footer */}
