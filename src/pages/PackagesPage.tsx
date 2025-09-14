@@ -258,7 +258,7 @@ const PackagesPage = () => {
           </div>
         </div>
 
-        {/* Quick Results Timeline - Dynamic Flow Design */}
+        {/* Pricing Section */}
         <div className="relative py-20 overflow-hidden">
           {/* Background Elements */}
           <div className="absolute inset-0 bg-gradient-to-r from-theme-beige/40 via-theme-light-red/20 to-theme-warm-brown/30"></div>
@@ -269,113 +269,162 @@ const PackagesPage = () => {
           <div className="relative z-10 text-center mb-16">
             <div className="inline-flex items-center justify-center mb-6">
               <h2 className="font-playfair text-4xl md:text-5xl font-bold text-theme-black">
-                Your Journey Timeline
+                Pricing & Services
               </h2>
             </div>
             <p className="text-xl text-theme-gray max-w-3xl mx-auto">
-              See the progression of your transformation with clear milestones and expected outcomes
+              Choose the service that's right for you and start your journey to better health
             </p>
           </div>
 
-          {/* Timeline Flow */}
-          <div className="relative z-10 max-w-6xl mx-auto">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-theme-vivid-red via-theme-rose to-theme-sage-green hidden lg:block"></div>
-            
-            {/* Timeline Items */}
-            <div className="space-y-16">
+          {/* Pricing Cards Grid */}
+          <div className="relative z-10 max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8">
               
-              {/* Month 2-3 */}
-              <div className="relative flex items-center">
-                <div className="w-full lg:w-1/2 lg:pr-12">
-                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border-l-4 border-theme-vivid-red shadow-lg hover:shadow-xl transition-all duration-300">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-theme-vivid-red rounded-full flex items-center justify-center mr-4">
-                        <Clock className="w-6 h-6 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-theme-black">2–3 Months</h3>
-                        <p className="text-theme-vivid-red font-semibold">Initial Progress</p>
-                      </div>
+              {/* Card 1: Complimentary Consultation */}
+              <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-theme-sage-green/20 hover:border-theme-sage-green overflow-hidden">
+                {/* Card Header */}
+                <div className="relative p-8 pb-6">
+                  <div className="absolute top-6 right-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-theme-sage-green to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Check className="w-8 h-8 text-white" />
                     </div>
-                    <p className="text-lg text-theme-gray leading-relaxed">
-                      Begin to notice improvements in breathing patterns, reduced snoring, and better sleep quality. 
-                      Your body starts adapting to the new techniques.
+                  </div>
+                  <div className="pr-20">
+                    <h3 className="font-playfair text-2xl font-bold text-theme-black mb-2">Complimentary Consultation</h3>
+                    <div className="text-4xl font-bold text-theme-sage-green mb-4">FREE</div>
+                    <p className="text-theme-gray text-lg leading-relaxed">
+                      Curious if myofunctional therapy is right for you or your child? Book a 15-minute consultation.
                     </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-theme-vivid-red/10 text-theme-vivid-red rounded-full text-sm font-medium">Better Sleep</span>
-                      <span className="px-3 py-1 bg-theme-vivid-red/10 text-theme-vivid-red rounded-full text-sm font-medium">Reduced Snoring</span>
-                    </div>
                   </div>
                 </div>
                 
-                {/* Timeline Dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-theme-vivid-red rounded-full border-4 border-white shadow-lg hidden lg:block"></div>
+                {/* Card Body */}
+                <div className="px-8 pb-8">
+                  <div className="space-y-4 mb-8">
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-theme-sage-green rounded-full mr-4"></div>
+                      <span className="text-theme-gray">See if therapy is the right fit</span>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-theme-sage-green rounded-full mr-4"></div>
+                      <span className="text-theme-gray">Determine candidacy for treatment</span>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-theme-sage-green rounded-full mr-4"></div>
+                      <span className="text-theme-gray">Learn whether to proceed with a paid comprehensive exam</span>
+                    </div>
+                  </div>
+                  
+                  <a
+                    href="mailto:andrea@andreacates.com?subject=Schedule Free Consultation"
+                    className="w-full inline-flex items-center justify-center px-6 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-sage-green text-white hover:bg-green-600"
+                  >
+                    <span>Schedule Free Consultation</span>
+                    <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
                 
-                <div className="w-full lg:w-1/2 lg:pl-12"></div>
+                {/* Hover Effect Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-theme-sage-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
 
-              {/* Month 4-6 */}
-              <div className="relative flex items-center">
-                <div className="w-full lg:w-1/2 lg:pr-12"></div>
-                
-                {/* Timeline Dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-theme-rose rounded-full border-4 border-white shadow-lg hidden lg:block"></div>
-                
-                <div className="w-full lg:w-1/2 lg:pl-12">
-                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border-l-4 border-theme-rose shadow-lg hover:shadow-xl transition-all duration-300">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-theme-rose rounded-full flex items-center justify-center mr-4">
-                        <Target className="w-6 h-6 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-theme-black">4–6 Months</h3>
-                        <p className="text-theme-rose font-semibold">Significant Results</p>
-                      </div>
-                    </div>
-                    <p className="text-lg text-theme-gray leading-relaxed">
-                      Experience major improvements in airway function, enhanced breathing efficiency, and substantial 
-                      reduction in sleep-related issues. Your confidence grows as techniques become natural.
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-theme-rose/10 text-theme-rose rounded-full text-sm font-medium">Improved Airway</span>
-                      <span className="px-3 py-1 bg-theme-rose/10 text-theme-rose rounded-full text-sm font-medium">Better Breathing</span>
-                      <span className="px-3 py-1 bg-theme-rose/10 text-theme-rose rounded-full text-sm font-medium">Enhanced Energy</span>
+              {/* Card 2: New Client Exam */}
+              <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-theme-vivid-red/20 hover:border-theme-vivid-red overflow-hidden">
+                {/* Card Header */}
+                <div className="relative p-8 pb-6">
+                  <div className="absolute top-6 right-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-theme-vivid-red to-red-600 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Target className="w-8 h-8 text-white" />
                     </div>
                   </div>
+                  <div className="pr-20">
+                    <h3 className="font-playfair text-2xl font-bold text-theme-black mb-2">New Client Exam</h3>
+                    <div className="text-4xl font-bold text-theme-vivid-red mb-4">$225</div>
+                    <p className="text-theme-gray text-lg leading-relaxed">
+                      Your first step toward myofunctional therapy. This 60–90 minute appointment includes comprehensive evaluation.
+                    </p>
+                  </div>
                 </div>
+                
+                {/* Card Body */}
+                <div className="px-8 pb-8">
+                  <div className="space-y-4 mb-8">
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-theme-vivid-red rounded-full mr-4"></div>
+                      <span className="text-theme-gray">A comprehensive intake form</span>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-theme-vivid-red rounded-full mr-4"></div>
+                      <span className="text-theme-gray">Time with your therapist to review symptoms and concerns</span>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-theme-vivid-red rounded-full mr-4"></div>
+                      <span className="text-theme-gray">A full evaluation to create your personalized therapy plan</span>
+                    </div>
+                  </div>
+                  
+                  <a
+                    href="mailto:andrea@andreacates.com?subject=Schedule New Client Exam"
+                    className="w-full inline-flex items-center justify-center px-6 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-vivid-red text-white hover:bg-red-600"
+                  >
+                    <span>Schedule Exam</span>
+                    <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+                
+                {/* Hover Effect Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-theme-vivid-red/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
 
-              {/* Ongoing */}
-              <div className="relative flex items-center">
-                <div className="w-full lg:w-1/2 lg:pr-12">
-                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border-l-4 border-theme-sage-green shadow-lg hover:shadow-xl transition-all duration-300">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-theme-sage-green rounded-full flex items-center justify-center mr-4">
-                        <Heart className="w-6 h-6 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-theme-black">Ongoing</h3>
-                        <p className="text-theme-sage-green font-semibold">Lifelong Benefits</p>
-                      </div>
+              {/* Card 3: Therapy Sessions & Plans */}
+              <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-theme-rose/20 hover:border-theme-rose overflow-hidden">
+                {/* Card Header */}
+                <div className="relative p-8 pb-6">
+                  <div className="absolute top-6 right-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-theme-rose to-pink-600 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Heart className="w-8 h-8 text-white" />
                     </div>
-                    <p className="text-lg text-theme-gray leading-relaxed">
-                      Maintain your progress with reduced session frequency. The techniques become second nature, 
-                      providing lasting improvements in your overall health and well-being.
+                  </div>
+                  <div className="pr-20">
+                    <h3 className="font-playfair text-2xl font-bold text-theme-black mb-2">Therapy Sessions & Plans</h3>
+                    <div className="text-4xl font-bold text-theme-rose mb-4">$220+</div>
+                    <p className="text-theme-gray text-lg leading-relaxed">
+                      Myofunctional therapy is an investment in overall health. Multiple therapy plans designed to meet your needs.
                     </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-theme-sage-green/10 text-theme-sage-green rounded-full text-sm font-medium">Sustained Results</span>
-                      <span className="px-3 py-1 bg-theme-sage-green/10 text-theme-sage-green rounded-full text-sm font-medium">Natural Habits</span>
-                      <span className="px-3 py-1 bg-theme-sage-green/10 text-theme-sage-green rounded-full text-sm font-medium">Long-term Health</span>
-                    </div>
                   </div>
                 </div>
                 
-                {/* Timeline Dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-theme-sage-green rounded-full border-4 border-white shadow-lg hidden lg:block"></div>
+                {/* Card Body */}
+                <div className="px-8 pb-8">
+                  <div className="space-y-4 mb-8">
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-theme-rose rounded-full mr-4"></div>
+                      <span className="text-theme-gray">Pricing varies based on your goals and treatment length</span>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-theme-rose rounded-full mr-4"></div>
+                      <span className="text-theme-gray">Sessions are personalized to support long-term wellness</span>
+                    </div>
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-theme-rose rounded-full mr-4"></div>
+                      <span className="text-theme-gray">Flexible scheduling to fit your lifestyle</span>
+                    </div>
+                  </div>
+                  
+                  <a
+                    href="mailto:andrea@andreacates.com?subject=Schedule Therapy Session"
+                    className="w-full inline-flex items-center justify-center px-6 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-rose text-white hover:bg-pink-600"
+                  >
+                    <span>Schedule Session</span>
+                    <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
                 
-                <div className="w-full lg:w-1/2 lg:pl-12"></div>
+                {/* Hover Effect Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-theme-rose/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
+
             </div>
           </div>
         </div>
