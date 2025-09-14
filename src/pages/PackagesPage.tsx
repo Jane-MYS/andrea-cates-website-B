@@ -279,10 +279,10 @@ const PackagesPage = () => {
 
           {/* Pricing Cards Grid */}
           <div className="relative z-10 max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 items-stretch">
               
               {/* Card 1: Complimentary Consultation */}
-              <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-theme-sage-green/20 hover:border-theme-sage-green overflow-hidden">
+              <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-theme-sage-green/20 hover:border-theme-sage-green overflow-hidden flex flex-col">
                 {/* Card Header */}
                 <div className="relative p-8 pb-6">
                   <div className="absolute top-6 right-6">
@@ -300,8 +300,8 @@ const PackagesPage = () => {
                 </div>
                 
                 {/* Card Body */}
-                <div className="px-8 pb-8">
-                  <div className="space-y-4 mb-8">
+                <div className="px-8 pb-8 flex-grow flex flex-col">
+                  <div className="space-y-4 mb-8 flex-grow">
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-theme-sage-green rounded-full mr-4"></div>
                       <span className="text-theme-gray">See if therapy is the right fit</span>
@@ -326,11 +326,11 @@ const PackagesPage = () => {
                 </div>
                 
                 {/* Hover Effect Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-theme-sage-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-theme-sage-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               </div>
 
               {/* Card 2: New Client Exam */}
-              <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-theme-vivid-red/20 hover:border-theme-vivid-red overflow-hidden">
+              <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-theme-vivid-red/20 hover:border-theme-vivid-red overflow-hidden flex flex-col">
                 {/* Card Header */}
                 <div className="relative p-8 pb-6">
                   <div className="absolute top-6 right-6">
@@ -348,8 +348,8 @@ const PackagesPage = () => {
                 </div>
                 
                 {/* Card Body */}
-                <div className="px-8 pb-8">
-                  <div className="space-y-4 mb-8">
+                <div className="px-8 pb-8 flex-grow flex flex-col">
+                  <div className="space-y-4 mb-8 flex-grow">
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-theme-vivid-red rounded-full mr-4"></div>
                       <span className="text-theme-gray">A comprehensive intake form</span>
@@ -366,7 +366,8 @@ const PackagesPage = () => {
                   
                   <a
                     href="mailto:andrea@andreacates.com?subject=Schedule New Client Exam"
-                    className="w-full inline-flex items-center justify-center px-6 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-vivid-red text-white hover:bg-red-600"
+                    className="w-full inline-flex items-center justify-center px-6 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group text-white"
+                    style={{ backgroundColor: '#ff4d6d' }}
                   >
                     <span>Schedule Exam</span>
                     <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
@@ -374,11 +375,11 @@ const PackagesPage = () => {
                 </div>
                 
                 {/* Hover Effect Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-theme-vivid-red/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-theme-vivid-red/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               </div>
 
               {/* Card 3: Therapy Sessions & Plans */}
-              <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-theme-rose/20 hover:border-theme-rose overflow-hidden">
+              <div className="group relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-theme-rose/20 hover:border-theme-rose overflow-hidden flex flex-col">
                 {/* Card Header */}
                 <div className="relative p-8 pb-6">
                   <div className="absolute top-6 right-6">
@@ -388,7 +389,7 @@ const PackagesPage = () => {
                   </div>
                   <div className="pr-20">
                     <h3 className="font-playfair text-2xl font-bold text-theme-black mb-2">Therapy Sessions & Plans</h3>
-                    <div className="text-4xl font-bold text-theme-rose mb-4">$220+</div>
+                    <div className="text-4xl font-bold text-theme-vivid-red mb-4">$220+</div>
                     <p className="text-theme-gray text-lg leading-relaxed">
                       Myofunctional therapy is an investment in overall health. Multiple therapy plans designed to meet your needs.
                     </p>
@@ -396,8 +397,8 @@ const PackagesPage = () => {
                 </div>
                 
                 {/* Card Body */}
-                <div className="px-8 pb-8">
-                  <div className="space-y-4 mb-8">
+                <div className="px-8 pb-8 flex-grow flex flex-col">
+                  <div className="space-y-4 mb-8 flex-grow">
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-theme-rose rounded-full mr-4"></div>
                       <span className="text-theme-gray">Pricing varies based on your goals and treatment length</span>
@@ -414,7 +415,7 @@ const PackagesPage = () => {
                   
                   <a
                     href="mailto:andrea@andreacates.com?subject=Schedule Therapy Session"
-                    className="w-full inline-flex items-center justify-center px-6 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-rose text-white hover:bg-pink-600"
+                    className="w-full inline-flex items-center justify-center px-6 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-vivid-red text-white hover:bg-red-600"
                   >
                     <span>Schedule Session</span>
                     <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
@@ -422,50 +423,13 @@ const PackagesPage = () => {
                 </div>
                 
                 {/* Hover Effect Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-theme-rose/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-theme-rose/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               </div>
 
             </div>
           </div>
         </div>
 
-        {/* Cost Transparency Section */}
-        <div className="relative mb-20">
-          <div className="bg-gradient-to-br from-white to-theme-light-red rounded-3xl shadow-2xl p-8 md:p-12 text-center border-2 border-theme-accent-beige">
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <div className="bg-white rounded-full p-3 shadow-lg border-2 border-theme-accent-beige">
-                <DollarSign className="w-8 h-8 text-theme-vivid-red" />
-              </div>
-            </div>
-            <div className="pt-6">
-              <h2 className="font-playfair text-3xl md:text-5xl font-bold mb-4 text-theme-black">
-                <span className="text-4xl md:text-6xl text-theme-vivid-red">$2,600</span> – <span className="text-4xl md:text-6xl text-theme-vivid-red">$3,000</span>
-              </h2>
-              <p className="text-xl mb-8 font-medium text-theme-black">
-                Full Program Packages
-              </p>
-              <div className="bg-theme-light-red rounded-2xl p-6 mb-8">
-                <p className="text-lg font-semibold mb-4 text-theme-black">
-                  Includes 10–18 sessions (6–12 months)
-                </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="flex items-center justify-center space-x-2">
-                    <Check className="w-5 h-5 text-theme-vivid-red" />
-                    <span className="text-lg font-medium text-theme-black">
-                      Free 15-minute consultation
-                    </span>
-                  </div>
-                  <div className="flex items-center justify-center space-x-2">
-                    <Check className="w-5 h-5 text-theme-vivid-red" />
-                    <span className="text-lg font-medium text-theme-black">
-                      Family & upfront payment discounts
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Footer-Style Call to Action */}
         <div className="relative bg-theme-beige py-20 overflow-hidden">
