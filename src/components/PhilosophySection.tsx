@@ -26,7 +26,7 @@ const PhilosophySection = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                 </svg>
               </div>
-              <h3 className="font-handwriting text-3xl mb-3 text-theme-vivid-red min-h-[2.5em] flex items-center justify-center text-center">Sleep<br />Optimally</h3>
+              <h3 className="font-handwriting text-2xl md:text-3xl mb-3 text-theme-vivid-red min-h-[2.5em] flex items-center justify-center text-center">Sleep Optimally</h3>
               <p className="text-beach-text/80 min-h-[3.5em] flex items-start">Getting the tongue out of the airway will improve sleep and increase energy levels</p>
             </div>
             
