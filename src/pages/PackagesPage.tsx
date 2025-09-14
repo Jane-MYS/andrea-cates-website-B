@@ -64,10 +64,10 @@ const PackagesPage = () => {
             {/* Back to Home Button */}
             <Link 
               to="/" 
-              className="flex items-center space-x-2 px-4 py-2 rounded-full bg-theme-vivid-red text-white hover:bg-red-600 transition-colors"
+              className="flex items-center space-x-2 px-3 md:px-4 py-2 rounded-full bg-theme-vivid-red text-white hover:bg-red-600 transition-colors"
             >
               <Home className="w-4 h-4" />
-              <span className="text-sm font-medium">Back to Home</span>
+              <span className="text-xs md:text-sm font-medium whitespace-nowrap">Back to Home</span>
             </Link>
           </div>
         </div>
