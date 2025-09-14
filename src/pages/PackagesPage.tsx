@@ -2,6 +2,7 @@ import React, { useEffect, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Check, Clock, DollarSign, Heart, Target, Zap, Star, Sparkles, ArrowRight, ArrowLeft, Home } from 'lucide-react';
 import Footer from '@/components/Footer';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const PackagesPage = () => {
   useLayoutEffect(() => {
@@ -80,53 +81,38 @@ const PackagesPage = () => {
         <div className="absolute bottom-20 right-10 w-28 h-28 rounded-full opacity-10 bg-theme-vivid-red"></div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 py-16 relative z-10">
+      {/* Hero Section - Full Width Background Image Layout */}
+      <div className="relative mb-20 min-h-[70vh] flex items-center justify-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/andrea-cates-website-B/lovable-uploads/Packagepage-image-hero.jpg" 
+            alt="Andrea Cates Myofunctional Therapy" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/20"></div>
+        </div>
         
-        {/* Hero Section - Split Layout */}
-        <div className="relative mb-20 pt-16">
-          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[60vh]">
-            {/* Left Side - Text Content */}
-            <div className="text-center lg:text-left">
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6" style={{ fontFamily: 'Marcellus, serif' }}>
-                Andrea Cates
-              </h1>
-              <h2 className="text-2xl md:text-3xl font-medium text-red-500 mb-8" style={{ fontFamily: 'BD Sans, sans-serif' }}>
-                Myofunctional therapy in South Bay
-              </h2>
-              <p className="text-xl md:text-2xl font-medium text-theme-vivid-red mb-8 leading-relaxed">
-                Easy, manageable and customize for every single individual
-              </p>
-              
-              {/* Call-to-Action Button */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button
-                  onClick={handleEmailRedirect}
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-vivid-red text-white hover:bg-red-600"
-                >
-                  <span>Book Your Free Consultation</span>
-                  <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
-                </button>
-                
-                <div className="flex items-center justify-center lg:justify-start text-lg text-theme-gray">
-                  <span>No commitment required</span>
-                </div>
-              </div>
-            </div>
-            
-            {/* Right Side - Hero Image */}
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-theme-vivid-red/20 to-theme-rose/20 rounded-3xl blur-lg group-hover:blur-xl transition-all duration-500"></div>
-              <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
-                <img 
-                  src="/andrea-cates-website-B/lovable-uploads/Packagepage-image-hero.jpg" 
-                  alt="Andrea Cates Myofunctional Therapy" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              </div>
-            </div>
+        {/* Text Content Overlay */}
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+          <p className="text-2xl md:text-4xl font-medium text-white mb-8 leading-relaxed">
+            Easy, manageable and customize for every single individual
+          </p>
+          
+          {/* Call-to-Action Button */}
+          <div className="flex justify-center">
+            <button
+              onClick={handleEmailRedirect}
+              className="inline-flex items-center justify-center px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl group bg-theme-vivid-red text-white hover:bg-red-600"
+            >
+              <span>Book Your Free Consultation</span>
+              <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
+            </button>
           </div>
         </div>
+      </div>
+
+      <div className="container mx-auto px-4 md:px-6 py-16 relative z-10">
 
         {/* What's Included Section - Smooth Dynamic Layout */}
         <div className="relative py-20 overflow-hidden">
@@ -430,6 +416,58 @@ const PackagesPage = () => {
           </div>
         </div>
 
+        {/* Q&A Section */}
+        <div className="relative py-20 overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute inset-0 bg-gradient-to-br from-theme-light-red/30 via-theme-beige/20 to-theme-warm-brown/10"></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-theme-sage-green/10 rounded-full blur-xl"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-theme-gold/10 rounded-full blur-xl"></div>
+          
+          {/* Header */}
+          <div className="relative z-10 text-center mb-16">
+            <div className="inline-flex items-center justify-center mb-6">
+              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-theme-vivid-red">
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <p className="text-xl text-theme-gray max-w-3xl mx-auto">
+              Get answers to common questions about myofunctional therapy
+            </p>
+          </div>
+
+          {/* Q&A Content */}
+          <div className="relative z-10 max-w-4xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="online-program" className="border-b border-theme-sage-green/20 mb-4">
+                <AccordionTrigger className="hover:no-underline py-6 group">
+                  <div className="flex items-center gap-4">
+                    <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-theme-sage-green/20 text-theme-sage-green shrink-0 transition-all duration-300 group-hover:bg-theme-sage-green group-hover:text-white">
+                      <Check className="w-7 h-7" />
+                    </div>
+                    <div className="text-left">
+                      <h3 className="font-playfair text-xl md:text-2xl font-semibold text-theme-vivid-red">Can I just buy an online program to save money?</h3>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pl-20">
+                  <div className="pb-6">
+                    <div className="space-y-6 text-lg text-theme-gray leading-relaxed">
+                      <p>
+                        Buying a one-size-fits-all online program is not recommended and carries a higher risk of failure than a custom program. A personalized plan from a certified therapist, delivered in-person or via telehealth, is considered the most effective approach for achieving lasting results.
+                      </p>
+                      <p>
+                        While pre-made programs may seem like a cheaper alternative, they lack the expert supervision and customization needed to correct muscle function effectively.
+                      </p>
+                      <p>
+                        While I personally recommend in-person sessions, Telehealth options offer convenience without sacrificing customization. We can mix and match both, in person and telehealth, for convenience and maximum effectiveness.
+                      </p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
 
         {/* Footer-Style Call to Action */}
         <div className="relative bg-theme-beige py-20 overflow-hidden">
@@ -463,11 +501,6 @@ const PackagesPage = () => {
                 <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
               </button>
               
-              <div className="flex items-center space-x-2 text-lg text-theme-gray">
-                <Star className="w-5 h-5 text-theme-vivid-red" />
-                <span>No commitment required</span>
-                <Star className="w-5 h-5 text-theme-vivid-red" />
-              </div>
             </div>
           </div>
         </div>
