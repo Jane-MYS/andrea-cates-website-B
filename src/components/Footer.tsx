@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Avatar, AvatarImage } from '@/components/ui/avatar';
 import { Instagram, Mail } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -60,7 +68,7 @@ const Footer = () => {
                  className="bg-beach-blue/10 p-3 rounded-full hover:bg-beach-blue/20 transition-colors" 
                  aria-label="TikTok">
                 <svg className="w-6 h-6 text-beach-blue" fill="currentColor" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M9 1.5C9 1.5 9 1.5 9 1.5C9 1.10218 9.15804 0.720644 9.43934 0.43934C9.72064 0.158035 10.1022 0 10.5 0L13.5 0C13.8978 0 14.2794 0.158035 14.5607 0.43934C14.842 0.720644 15 1.10218 15 1.5C15 1.5 15 1.5 15 1.5V3H17.5C17.8978 3 18.2794 3.15804 18.5607 3.43934C18.842 3.72064 19 4.10218 19 4.5C19 4.89782 18.842 5.27936 18.5607 5.56066C18.2794 5.84196 17.8978 6 17.5 6H15V7.5C15 10.5 18 10.5 18 10.5V13.5C18 13.5 16.5 13.5 15 13.5C13.5 13.5 12 12 12 10.5V1.5H10.5C10.5 4.5 7.5 4.5 7.5 4.5V7.5C7.5 7.5 9 7.5 9 7.5V10.5C9 15 12 16.5 15 16.5V19.5C12 19.5 9 18 9 13.5V10.5C6 10.5 4.5 7.5 4.5 7.5C4.5 7.5 4.5 4.5 7.5 4.5C7.5 4.5 9 4.5 9 1.5Z" clipRule="evenodd" />
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
                 </svg>
               </a>
             </div>
@@ -73,8 +81,107 @@ const Footer = () => {
               &copy; {currentYear} Andrea Cates. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-beach-text/70">
-              <a href="#" className="hover:text-beach-peach transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-beach-peach transition-colors">Terms of Service</a>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button className="hover:text-beach-peach transition-colors cursor-pointer">
+                    Privacy Policy
+                  </button>
+                </DialogTrigger>
+                <DialogContent className="max-w-2xl">
+                  <DialogHeader>
+                    <DialogTitle className="text-theme-vivid-red">Privacy Policy</DialogTitle>
+                    <DialogDescription>
+                      Last updated: {new Date().toLocaleDateString()}
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="space-y-4 text-sm text-gray-700">
+                    <p>
+                      At Andrea Cates Myofunctional Therapy, we are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or use our services.
+                    </p>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Information We Collect</h4>
+                      <ul className="list-disc list-inside space-y-1 ml-4">
+                        <li>Personal information you provide when scheduling appointments</li>
+                        <li>Contact information including name, email, and phone number</li>
+                        <li>Health information relevant to your myofunctional therapy treatment</li>
+                        <li>Website usage data and analytics</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">How We Use Your Information</h4>
+                      <ul className="list-disc list-inside space-y-1 ml-4">
+                        <li>To provide and improve our myofunctional therapy services</li>
+                        <li>To communicate with you about appointments and treatment</li>
+                        <li>To send you relevant health information and updates</li>
+                        <li>To comply with legal and regulatory requirements</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Your Rights</h4>
+                      <p>
+                        You have the right to access, update, or delete your personal information. You may also opt out of certain communications at any time. For questions about your privacy rights, please contact us at andrea@andreacates.com.
+                      </p>
+                    </div>
+                    <p className="text-xs text-gray-500 mt-4">
+                      This is a simplified privacy policy. For complete terms, please contact us directly.
+                    </p>
+                  </div>
+                </DialogContent>
+              </Dialog>
+              
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button className="hover:text-beach-peach transition-colors cursor-pointer">
+                    Terms of Service
+                  </button>
+                </DialogTrigger>
+                <DialogContent className="max-w-2xl">
+                  <DialogHeader>
+                    <DialogTitle className="text-theme-vivid-red">Terms of Service</DialogTitle>
+                    <DialogDescription>
+                      Last updated: {new Date().toLocaleDateString()}
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="space-y-4 text-sm text-gray-700">
+                    <p>
+                      Welcome to Andrea Cates Myofunctional Therapy. These Terms of Service govern your use of our website and services. By accessing our website or scheduling appointments, you agree to be bound by these terms.
+                    </p>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Services Provided</h4>
+                      <ul className="list-disc list-inside space-y-1 ml-4">
+                        <li>Myofunctional therapy consultations and treatments</li>
+                        <li>Educational resources and health information</li>
+                        <li>Appointment scheduling and patient communication</li>
+                        <li>Personalized treatment plans and ongoing support</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Appointment Policy</h4>
+                      <ul className="list-disc list-inside space-y-1 ml-4">
+                        <li>Appointments must be scheduled in advance</li>
+                        <li>24-hour notice required for cancellations</li>
+                        <li>Late arrivals may result in shortened session time</li>
+                        <li>Payment is due at the time of service unless otherwise arranged</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Limitation of Liability</h4>
+                      <p>
+                        Our services are provided for educational and therapeutic purposes. While we strive to provide the highest quality care, results may vary. We are not liable for any indirect, incidental, or consequential damages arising from the use of our services.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Contact Information</h4>
+                      <p>
+                        For questions about these terms or our services, please contact us at andrea@andreacates.com or call 310-944-8493.
+                      </p>
+                    </div>
+                    <p className="text-xs text-gray-500 mt-4">
+                      This is a simplified terms of service. For complete terms, please contact us directly.
+                    </p>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </div>
