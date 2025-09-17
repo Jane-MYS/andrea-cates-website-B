@@ -3,6 +3,7 @@ import { cn } from '@/lib/utils';
 import { Avatar, AvatarImage } from '@/components/ui/avatar';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
+import { Phone, Mail } from 'lucide-react';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -69,6 +70,24 @@ const Navbar = () => {
                 </p>
               </div>
             </a>
+
+            {/* Mobile Contact Buttons */}
+            <div className="flex items-center space-x-2">
+              <a 
+                href="tel:+13108965176" 
+                className="flex items-center justify-center w-10 h-10 bg-red-500 hover:bg-red-600 rounded-full text-white transition-colors"
+                aria-label="Call Andrea Cates"
+              >
+                <Phone className="w-4 h-4" />
+              </a>
+              <a 
+                href="mailto:andrea@andreacates.com" 
+                className="flex items-center justify-center w-10 h-10 bg-red-500 hover:bg-red-600 rounded-full text-white transition-colors"
+                aria-label="Email Andrea Cates"
+              >
+                <Mail className="w-4 h-4" />
+              </a>
+            </div>
 
             {/* Mobile menu button */}
             <button
