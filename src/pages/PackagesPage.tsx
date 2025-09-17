@@ -96,7 +96,7 @@ const PackagesPage = () => {
         {/* Text Content Overlay */}
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6 md:px-4">
           <p className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-medium text-white mb-6 md:mb-8 leading-relaxed">
-            Easy, manageable and customize for every single individual
+            Easy, Manageable and Customized for Every Single Individual
           </p>
           
           {/* Call-to-Action Button */}
