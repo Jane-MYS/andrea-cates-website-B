@@ -48,7 +48,7 @@ const HeroSection = () => {
                   </div>
                 </h1>
                 <p className="text-xl mb-8 text-theme-gray max-w-lg">
-                  Treating the root cause of dysfunction to reclaim your face growth, sleep, and confidence
+                  Treating the root cause of dysfunction to reclaim face growth, sleep, and confidence
                 </p>
                 <div className="flex gap-4">
                   <a 
@@ -100,7 +100,7 @@ const HeroSection = () => {
                 </div>
               </h1>
               <p className="text-base mb-8 text-theme-gray max-w-sm mx-auto leading-relaxed">
-                Treating the root cause of dysfunction to reclaim your face growth, sleep, and confidence
+                Treating the root cause of dysfunction to reclaim face growth, sleep, and confidence
               </p>
               <div className="flex flex-col gap-3 max-w-sm mx-auto">
                 <a 

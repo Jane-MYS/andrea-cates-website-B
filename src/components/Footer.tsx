@@ -42,8 +42,8 @@ const Footer = () => {
                 <svg className="w-5 h-5 mr-2 text-beach-blue flex-shrink-0 mt-0.5 md:mt-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                 </svg>
-                <a href="tel:+13109448493" className="text-beach-text/80 hover:text-beach-blue transition-colors text-center">
-                  310-944-8493
+                <a href="tel:+13108965176" className="text-beach-text/80 hover:text-beach-blue transition-colors text-center">
+                  310-896-5176
                 </a>
               </div>
               
@@ -173,7 +173,7 @@ const Footer = () => {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Contact Information</h4>
                       <p>
-                        For questions about these terms or our services, please contact us at andrea@andreacates.com or call 310-944-8493.
+                        For questions about these terms or our services, please contact us at andrea@andreacates.com or call 310-896-5176.
                       </p>
                     </div>
                     <p className="text-xs text-gray-500 mt-4">
