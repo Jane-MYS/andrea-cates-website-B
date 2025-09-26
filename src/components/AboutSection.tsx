@@ -40,6 +40,35 @@ const AboutSection = () => {
                     Since incorporating myofunctional therapy into my practice, I've seen remarkable improvements in my patients' health, comfort, and quality of life.
                   </p>
                 </div>
+                
+                {/* Professional Affiliations Badge - Desktop */}
+                <div className="mt-6 flex justify-center">
+                  <div className="bg-white/50 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-theme-sage-green/20">
+                    <div className="flex items-center gap-6">
+                      <img 
+                        src="/andrea-cates-website-B/lovable-uploads/affiliation-logo-1.png" 
+                        alt="Professional Affiliation 1" 
+                        className="h-12 opacity-80 hover:opacity-100 transition-all duration-300" 
+                        onError={(e) => {
+                          console.log('Image 1 failed to load:', e.target.src);
+                          e.target.src = '/andrea-cates-website-B/lovable-uploads/Andrea-Logo-New.jpeg';
+                        }}
+                        onLoad={() => console.log('Image 1 loaded successfully')}
+                      />
+                      <div className="w-px h-8 bg-theme-sage-green/30"></div>
+                      <img 
+                        src="/andrea-cates-website-B/lovable-uploads/affiliation-logo-2.png" 
+                        alt="Professional Affiliation 2" 
+                        className="h-8 opacity-80 hover:opacity-100 transition-all duration-300" 
+                        onError={(e) => {
+                          console.log('Image 2 failed to load:', e.target.src);
+                          e.target.src = '/andrea-cates-website-B/lovable-uploads/Andrea-Logo-New.jpeg';
+                        }}
+                        onLoad={() => console.log('Image 2 loaded successfully')}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -84,6 +113,35 @@ const AboutSection = () => {
                 <p>
                   Since incorporating myofunctional therapy into my practice, I've seen remarkable improvements in my patients' health, comfort, and quality of life.
                 </p>
+              </div>
+              
+              {/* Professional Affiliations Badge - Mobile */}
+              <div className="mt-4 flex justify-center">
+                <div className="bg-white/50 backdrop-blur-sm rounded-xl px-4 py-3 shadow-sm border border-theme-sage-green/20">
+                  <div className="flex items-center gap-4">
+                    <img 
+                      src="/andrea-cates-website-B/lovable-uploads/affiliation-logo-1.png" 
+                      alt="Professional Affiliation 1" 
+                      className="h-8 opacity-80 hover:opacity-100 transition-all duration-300" 
+                      onError={(e) => {
+                        console.log('Mobile Image 1 failed to load:', e.target.src);
+                        e.target.src = '/andrea-cates-website-B/lovable-uploads/Andrea-Logo-New.jpeg';
+                      }}
+                      onLoad={() => console.log('Mobile Image 1 loaded successfully')}
+                    />
+                    <div className="w-px h-6 bg-theme-sage-green/30"></div>
+                    <img 
+                      src="/andrea-cates-website-B/lovable-uploads/affiliation-logo-2.png" 
+                      alt="Professional Affiliation 2" 
+                      className="h-6 opacity-80 hover:opacity-100 transition-all duration-300" 
+                      onError={(e) => {
+                        console.log('Mobile Image 2 failed to load:', e.target.src);
+                        e.target.src = '/andrea-cates-website-B/lovable-uploads/Andrea-Logo-New.jpeg';
+                      }}
+                      onLoad={() => console.log('Mobile Image 2 loaded successfully')}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
